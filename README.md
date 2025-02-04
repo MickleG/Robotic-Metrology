@@ -52,7 +52,7 @@ Raw point cloud data contains **noise and misalignment**. You will filter and al
 ---
 
 ## **Submission Requirements**
-- Python scripts for:
+- C++ scripts for:
   - **Eye-in-hand calibration (two methods & comparison)**
   - **Point cloud filtering & alignment**
 - `aligned_scan.csv`
