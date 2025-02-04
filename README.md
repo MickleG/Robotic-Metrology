@@ -5,6 +5,12 @@ This assignment evaluates your understanding of **robotic metrology**, **eye-in-
 1. **Calibrate a robot-mounted scanner using two different methods and compare results.**
 2. **Process noisy scan data and align multiple scans.**
 
+**Implementation Requirement:**
+
+This assignment must be implemented in C++.
+Use Eigen for matrix operations and PCL (Point Cloud Library) for point cloud processing.
+Provide a CMake project with necessary dependencies.
+
 ## **Part 1: Eye-in-Hand Calibration**
 
 ### **Scenario**
