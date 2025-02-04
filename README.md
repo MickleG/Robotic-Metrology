@@ -7,9 +7,14 @@ This assignment evaluates your understanding of **robotic metrology**, **eye-in-
 
 **Implementation Requirement:**
 
-This assignment must be implemented in C++.
-Use Eigen for matrix operations and PCL (Point Cloud Library) for point cloud processing.
-Provide a CMake project with necessary dependencies.
+- This assignment must be implemented in C++ within a ROS 2 package.
+- Use Eigen for matrix operations and PCL (Point Cloud Library) for point cloud processing.
+- Provide a CMake-based ROS 2 package (CMakeLists.txt and package.xml included).
+- Use ROS 2 nodes to structure your implementation:
+    - One node for calibration
+    - One node for scan processing
+    - A launch file to run everything together.
+
 
 ## **Part 1: Eye-in-Hand Calibration**
 
@@ -27,10 +32,15 @@ Your 3D scanner is mounted on a **6-axis robotic arm (e.g., UR5)**. To ensure ac
 3. Validate by projecting a known pattern into the **robot base frame**.
 4. **Compare the accuracy and stability of both methods.**
 
+### **ROS 2 Implementation Details**
+- Implement a ROS 2 node for eye-in-hand calibration.
+- The node should compute T_cam^ee using two different calibration methods.
+- Provide a mechanism to trigger the calibration and retrieve results.
 
 ### **Expected Output**
 - Two `T_cam_ee` (4x4 homogeneous transformation matrices) from different methods
 - **Comparison of both methods** (accuracy, error metrics, and visualization)
+- ROS 2 messages with computed transformations.
 
 ---
 
@@ -45,6 +55,12 @@ Raw point cloud data contains **noise and misalignment**. You will filter and al
    - Moving Average Filtering
 2. **Align two scans using Iterative Closest Point (ICP).**
 3. **Output the merged, aligned point cloud.**
+
+### **ROS 2 Implementation Details**
+- Implement a ROS 2 node for point cloud filtering and alignment.
+- The node should process two overlapping scans and output a merged, aligned point cloud.
+- Use noise filtering techniques and ICP-based alignment.
+- The final output should be available for visualization and further use.
 
 ### **Expected Output**
 📄 `aligned_scan.csv` (filtered & registered point cloud)
