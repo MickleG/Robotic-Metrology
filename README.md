@@ -1,6 +1,7 @@
 # **Robotic Engineer Homework Assignment: 3D Scanning & Calibration**
 
 ## **Overview**
+At Machina Labs, our robotics engineers regularly develop ROS 2-based calibration pipelines and point cloud processing workflows to enable accurate manufacturing processes.
 This assignment evaluates your understanding of **robotic metrology**, **eye-in-hand calibration**, and **3D scanning data processing**. You will:
 1. **Calibrate a robot-mounted scanner using two different methods and compare results.**
 2. **Process noisy scan data and align multiple scans.**
@@ -89,10 +90,5 @@ Raw point cloud data contains **noise and misalignment**. You will filter and al
 ✔️ **Comparison and analysis of the two methods**
 ✔️ **Effectiveness of noise filtering & scan alignment**
 ✔️ **Code readability & visualization clarity**
-
----
-
-## **Estimated Completion Time**
-⏳ **8 hours** 
 
 ---
