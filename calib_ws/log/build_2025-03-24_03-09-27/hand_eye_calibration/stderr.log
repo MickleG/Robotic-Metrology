@@ -1,0 +1,17 @@
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:32:12:[m[K [01;31m[Kerror: [m[K‘[01m[KPointXYZRGBRGB[m[K’ was not declared in this scope
+   32 | PointCloud<[01;31m[KPointXYZRGBRGB[m[K>::Ptr loadPointCloud(const std::string &filename, vector<int> pointcloud_color) {
+      |            [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:32:26:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   32 | PointCloud<PointXYZRGBRGB[01;31m[K>[m[K::Ptr loadPointCloud(const std::string &filename, vector<int> pointcloud_color) {
+      |                          [01;31m[K^[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:32:33:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[KloadPointCloud[m[K’
+   32 | PointCloud<PointXYZRGBRGB>::Ptr [01;31m[KloadPointCloud[m[K(const std::string &filename, vector<int> pointcloud_color) {
+      |                                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:[m[K In constructor ‘[01m[KPointCloudProcessor::PointCloudProcessor()[m[K’:
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:129:18:[m[K [01;31m[Kerror: [m[K‘[01m[KloadPointCloud[m[K’ was not declared in this scope; did you mean ‘[01m[KsavePointCloud[m[K’?
+  129 |         cloud1 = [01;31m[KloadPointCloud[m[K(package_share_directory + "/data/scan_processing/scan1.dat", pc1_color);
+      |                  [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                  [32m[KsavePointCloud[m[K
+gmake[2]: *** [CMakeFiles/scan_processing_node.dir/build.make:76: CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/scan_processing_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

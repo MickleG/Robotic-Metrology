@@ -1,0 +1,341 @@
+[0.000000] (-) TimerEvent: {}
+[0.000070] (hand_eye_calibration) JobQueued: {'identifier': 'hand_eye_calibration', 'dependencies': OrderedDict()}
+[0.000211] (hand_eye_calibration) JobStarted: {'identifier': 'hand_eye_calibration'}
+[0.005149] (hand_eye_calibration) JobProgress: {'identifier': 'hand_eye_calibration', 'progress': 'cmake'}
+[0.005687] (hand_eye_calibration) JobProgress: {'identifier': 'hand_eye_calibration', 'progress': 'build'}
+[0.006204] (hand_eye_calibration) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/parallels/calib_ws/build/hand_eye_calibration', '--', '-j2', '-l2'], 'cwd': '/home/parallels/calib_ws/build/hand_eye_calibration', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VTK_DEFAULT_RENDERER', 'Mesa'), ('USER', 'parallels'), ('MESA_LOADER_DRIVER_OVERRIDE', 'llvmpipe'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/jvm/java-11-openjdk-arm64/lib/libjawt.so'), ('HOME', '/home/parallels'), ('OLDPWD', '/home/parallels'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2085'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6eebf058caf05e71ca02930a67d74c06'), ('COLORTERM', 'truecolor'), ('VTK_RENDERER_BACKEND', 'OpenGL2'), ('COLCON_PREFIX_PATH', '/home/parallels/calib_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'parallels'), ('_', '/home/parallels/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'parallels'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/parallels/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-linux-22-04-desktop:@/tmp/.ICE-unix/2085,unix/ubuntu-linux-22-04-desktop:/tmp/.ICE-unix/2085'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/882fd45e_baa7_4d3c_884f_bb0886ff37ee'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/parallels/calib_ws/install/hand_eye_calibration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/parallels/calib_ws/build/hand_eye_calibration'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6eebf058caf05e71ca02930a67d74c06'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/parallels/calib_ws/install/hand_eye_calibration:/opt/ros/humble')]), 'shell': False}
+[0.056848] (hand_eye_calibration) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scan_processing_node\x1b[0m\n'}
+[0.099854] (-) TimerEvent: {}
+[0.127966] (hand_eye_calibration) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o\x1b[0m\n'}
+[0.128148] (hand_eye_calibration) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/calibration_node.dir/src/calibration_node.cpp.o\x1b[0m\n'}
+[0.199935] (-) TimerEvent: {}
+[0.300345] (-) TimerEvent: {}
+[0.400631] (-) TimerEvent: {}
+[0.500985] (-) TimerEvent: {}
+[0.601274] (-) TimerEvent: {}
+[0.701625] (-) TimerEvent: {}
+[0.801911] (-) TimerEvent: {}
+[0.907818] (-) TimerEvent: {}
+[1.010758] (-) TimerEvent: {}
+[1.111009] (-) TimerEvent: {}
+[1.211269] (-) TimerEvent: {}
+[1.311538] (-) TimerEvent: {}
+[1.411846] (-) TimerEvent: {}
+[1.512180] (-) TimerEvent: {}
+[1.612448] (-) TimerEvent: {}
+[1.714726] (-) TimerEvent: {}
+[1.818728] (-) TimerEvent: {}
+[1.918970] (-) TimerEvent: {}
+[2.022629] (-) TimerEvent: {}
+[2.126737] (-) TimerEvent: {}
+[2.227860] (-) TimerEvent: {}
+[2.333598] (-) TimerEvent: {}
+[2.433858] (-) TimerEvent: {}
+[2.535163] (-) TimerEvent: {}
+[2.635405] (-) TimerEvent: {}
+[2.735638] (-) TimerEvent: {}
+[2.835873] (-) TimerEvent: {}
+[2.936157] (-) TimerEvent: {}
+[3.036456] (-) TimerEvent: {}
+[3.136696] (-) TimerEvent: {}
+[3.237189] (-) TimerEvent: {}
+[3.337466] (-) TimerEvent: {}
+[3.437770] (-) TimerEvent: {}
+[3.538056] (-) TimerEvent: {}
+[3.638348] (-) TimerEvent: {}
+[3.738684] (-) TimerEvent: {}
+[3.839051] (-) TimerEvent: {}
+[3.939466] (-) TimerEvent: {}
+[4.041745] (-) TimerEvent: {}
+[4.142120] (-) TimerEvent: {}
+[4.242492] (-) TimerEvent: {}
+[4.342969] (-) TimerEvent: {}
+[4.444488] (-) TimerEvent: {}
+[4.546875] (-) TimerEvent: {}
+[4.647298] (-) TimerEvent: {}
+[4.748280] (-) TimerEvent: {}
+[4.848789] (-) TimerEvent: {}
+[4.949082] (-) TimerEvent: {}
+[5.049373] (-) TimerEvent: {}
+[5.149716] (-) TimerEvent: {}
+[5.252422] (-) TimerEvent: {}
+[5.352941] (-) TimerEvent: {}
+[5.453271] (-) TimerEvent: {}
+[5.523154] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KPointCloudProcessor::PointCloudProcessor()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.539843] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:128:103:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZ>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >\x1b[m\x1b[K\xe2\x80\x99})\n'}
+[5.539991] (hand_eye_calibration) StderrLine: {'line': b'  128 |         cloud1 = loadPointCloud(package_share_directory + "/data/scan_processing/scan1.dat", pc1_color\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[5.540133] (hand_eye_calibration) StderrLine: {'line': b'      |                                                                                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.547721] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[5.547894] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[5.547923] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:1\x1b[m\x1b[K:\n'}
+[5.548188] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:363:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = pcl::PointCloud<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.548360] (hand_eye_calibration) StderrLine: {'line': b'  363 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const shared_ptr<_Yp>& __r) noexcept\n'}
+[5.548384] (hand_eye_calibration) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.569574] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:363:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.569862] (-) TimerEvent: {}
+[5.570779] (hand_eye_calibration) StderrLine: {'line': b'/usr/include/c++/11/bits/shared_ptr.h: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = const std::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >&; _Tp = pcl::PointCloud<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.570875] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:363:2:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >::_Assignable<const std::shared_ptr<_Tp>&> std::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >::operator=<_Yp>(const std::shared_ptr<_Tp>&) [with _Yp = pcl::PointCloud<pcl::PointXYZRGB>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.570903] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:128:103:\x1b[m\x1b[K   required from here\n'}
+[5.570926] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:130:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, std::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.571074] (hand_eye_calibration) StderrLine: {'line': b'  130 |         using \x1b[01;31m\x1b[K_Assignable\x1b[m\x1b[K = typename enable_if<\n'}
+[5.571101] (hand_eye_calibration) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.571124] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:374:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = pcl::PointCloud<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.571149] (hand_eye_calibration) StderrLine: {'line': b'  374 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(auto_ptr<_Yp>&& __r)\n'}
+[5.571176] (hand_eye_calibration) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.571199] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:374:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.571225] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:128:103:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::auto_ptr<_Up>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.571250] (hand_eye_calibration) StderrLine: {'line': b'  128 |         cloud1 = loadPointCloud(package_share_directory + "/data/scan_processing/scan1.dat", pc1_color\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[5.571275] (hand_eye_calibration) StderrLine: {'line': b'      |                                                                                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[5.571298] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[5.571323] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[5.571346] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:1\x1b[m\x1b[K:\n'}
+[5.571369] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:391:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = pcl::PointCloud<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.571393] (hand_eye_calibration) StderrLine: {'line': b'  391 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(shared_ptr<_Yp>&& __r) noexcept\n'}
+[5.571415] (hand_eye_calibration) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.571437] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:391:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.571460] (hand_eye_calibration) StderrLine: {'line': b'/usr/include/c++/11/bits/shared_ptr.h: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = std::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >; _Tp = pcl::PointCloud<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.571708] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:391:2:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >::_Assignable<std::shared_ptr<_Tp> > std::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >::operator=<_Yp>(std::shared_ptr<_Tp>&&) [with _Yp = pcl::PointCloud<pcl::PointXYZRGB>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.571737] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:128:103:\x1b[m\x1b[K   required from here\n'}
+[5.571760] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:130:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, std::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.571786] (hand_eye_calibration) StderrLine: {'line': b'  130 |         using \x1b[01;31m\x1b[K_Assignable\x1b[m\x1b[K = typename enable_if<\n'}
+[5.571808] (hand_eye_calibration) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.571830] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:399:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = pcl::PointCloud<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.571853] (hand_eye_calibration) StderrLine: {'line': b'  399 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(unique_ptr<_Yp, _Del>&& __r)\n'}
+[5.571876] (hand_eye_calibration) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.571899] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:399:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.571922] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:128:103:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::unique_ptr<_Tp, _Dp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.571946] (hand_eye_calibration) StderrLine: {'line': b'  128 |         cloud1 = loadPointCloud(package_share_directory + "/data/scan_processing/scan1.dat", pc1_color\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[5.571969] (hand_eye_calibration) StderrLine: {'line': b'      |                                                                                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[5.571991] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[5.572016] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[5.572038] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:1\x1b[m\x1b[K:\n'}
+[5.572154] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:359:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = pcl::PointCloud<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.573319] (hand_eye_calibration) StderrLine: {'line': b'  359 |       shared_ptr& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const shared_ptr&) noexcept = default;\n'}
+[5.573349] (hand_eye_calibration) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.573372] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:359:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.573404] (hand_eye_calibration) StderrLine: {'line': b'  359 |       shared_ptr& operator=(\x1b[01;36m\x1b[Kconst shared_ptr&\x1b[m\x1b[K) noexcept = default;\n'}
+[5.573426] (hand_eye_calibration) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.573449] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:383:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = pcl::PointCloud<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.573664] (hand_eye_calibration) StderrLine: {'line': b'  383 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(shared_ptr&& __r) noexcept\n'}
+[5.573687] (hand_eye_calibration) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.573709] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:383:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.573733] (hand_eye_calibration) StderrLine: {'line': b'  383 |       operator=(\x1b[01;36m\x1b[Kshared_ptr&& __r\x1b[m\x1b[K) noexcept\n'}
+[5.573755] (hand_eye_calibration) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.573778] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:129:103:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZ>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >\x1b[m\x1b[K\xe2\x80\x99})\n'}
+[5.573803] (hand_eye_calibration) StderrLine: {'line': b'  129 |         cloud2 = loadPointCloud(package_share_directory + "/data/scan_processing/scan2.dat", pc2_color\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[5.573827] (hand_eye_calibration) StderrLine: {'line': b'      |                                                                                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.573850] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[5.573871] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[5.573894] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:1\x1b[m\x1b[K:\n'}
+[5.573916] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:363:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = pcl::PointCloud<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.573940] (hand_eye_calibration) StderrLine: {'line': b'  363 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const shared_ptr<_Yp>& __r) noexcept\n'}
+[5.573962] (hand_eye_calibration) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.573985] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:363:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.574007] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:374:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = pcl::PointCloud<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.574032] (hand_eye_calibration) StderrLine: {'line': b'  374 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(auto_ptr<_Yp>&& __r)\n'}
+[5.574057] (hand_eye_calibration) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.574079] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:374:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.574100] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:129:103:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::auto_ptr<_Up>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.574122] (hand_eye_calibration) StderrLine: {'line': b'  129 |         cloud2 = loadPointCloud(package_share_directory + "/data/scan_processing/scan2.dat", pc2_color\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[5.574142] (hand_eye_calibration) StderrLine: {'line': b'      |                                                                                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[5.574163] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[5.574185] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[5.574208] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:1\x1b[m\x1b[K:\n'}
+[5.574229] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:391:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = pcl::PointCloud<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.574253] (hand_eye_calibration) StderrLine: {'line': b'  391 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(shared_ptr<_Yp>&& __r) noexcept\n'}
+[5.574273] (hand_eye_calibration) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.574293] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:391:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.574314] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:399:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = pcl::PointCloud<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.574336] (hand_eye_calibration) StderrLine: {'line': b'  399 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(unique_ptr<_Yp, _Del>&& __r)\n'}
+[5.574402] (hand_eye_calibration) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.574425] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:399:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.574446] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:129:103:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::unique_ptr<_Tp, _Dp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.574470] (hand_eye_calibration) StderrLine: {'line': b'  129 |         cloud2 = loadPointCloud(package_share_directory + "/data/scan_processing/scan2.dat", pc2_color\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[5.574491] (hand_eye_calibration) StderrLine: {'line': b'      |                                                                                                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[5.574512] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[5.574533] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[5.574553] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:1\x1b[m\x1b[K:\n'}
+[5.574574] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:359:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = pcl::PointCloud<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.574596] (hand_eye_calibration) StderrLine: {'line': b'  359 |       shared_ptr& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const shared_ptr&) noexcept = default;\n'}
+[5.574617] (hand_eye_calibration) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.574639] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:359:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.574660] (hand_eye_calibration) StderrLine: {'line': b'  359 |       shared_ptr& operator=(\x1b[01;36m\x1b[Kconst shared_ptr&\x1b[m\x1b[K) noexcept = default;\n'}
+[5.574703] (hand_eye_calibration) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.574724] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:383:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = pcl::PointCloud<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.574745] (hand_eye_calibration) StderrLine: {'line': b'  383 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(shared_ptr&& __r) noexcept\n'}
+[5.574765] (hand_eye_calibration) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.574786] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:383:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.574809] (hand_eye_calibration) StderrLine: {'line': b'  383 |       operator=(\x1b[01;36m\x1b[Kshared_ptr&& __r\x1b[m\x1b[K) noexcept\n'}
+[5.574830] (hand_eye_calibration) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.670007] (-) TimerEvent: {}
+[5.770305] (-) TimerEvent: {}
+[5.870722] (-) TimerEvent: {}
+[5.971028] (-) TimerEvent: {}
+[6.071607] (-) TimerEvent: {}
+[6.174148] (-) TimerEvent: {}
+[6.283469] (-) TimerEvent: {}
+[6.453244] (-) TimerEvent: {}
+[6.681705] (-) TimerEvent: {}
+[6.822009] (-) TimerEvent: {}
+[6.951803] (-) TimerEvent: {}
+[7.078367] (-) TimerEvent: {}
+[7.229077] (-) TimerEvent: {}
+[7.380235] (-) TimerEvent: {}
+[7.503828] (-) TimerEvent: {}
+[7.627027] (-) TimerEvent: {}
+[7.786169] (-) TimerEvent: {}
+[7.907551] (-) TimerEvent: {}
+[8.059145] (-) TimerEvent: {}
+[8.192832] (-) TimerEvent: {}
+[8.330770] (-) TimerEvent: {}
+[8.459138] (-) TimerEvent: {}
+[8.650479] (-) TimerEvent: {}
+[8.836228] (-) TimerEvent: {}
+[8.983092] (-) TimerEvent: {}
+[9.164007] (-) TimerEvent: {}
+[9.338745] (-) TimerEvent: {}
+[9.519756] (-) TimerEvent: {}
+[9.673891] (-) TimerEvent: {}
+[9.847004] (-) TimerEvent: {}
+[10.014801] (-) TimerEvent: {}
+[10.213862] (-) TimerEvent: {}
+[10.375216] (-) TimerEvent: {}
+[10.578977] (-) TimerEvent: {}
+[10.800532] (-) TimerEvent: {}
+[10.982979] (-) TimerEvent: {}
+[11.105022] (-) TimerEvent: {}
+[11.248203] (-) TimerEvent: {}
+[11.414961] (-) TimerEvent: {}
+[11.584187] (-) TimerEvent: {}
+[11.768322] (-) TimerEvent: {}
+[11.894075] (-) TimerEvent: {}
+[12.018731] (-) TimerEvent: {}
+[12.188629] (-) TimerEvent: {}
+[12.335599] (-) TimerEvent: {}
+[12.500963] (-) TimerEvent: {}
+[12.632423] (-) TimerEvent: {}
+[12.790635] (-) TimerEvent: {}
+[12.970619] (-) TimerEvent: {}
+[13.121230] (-) TimerEvent: {}
+[13.288875] (-) TimerEvent: {}
+[13.495761] (-) TimerEvent: {}
+[13.758568] (-) TimerEvent: {}
+[14.007688] (-) TimerEvent: {}
+[14.210630] (-) TimerEvent: {}
+[14.435857] (-) TimerEvent: {}
+[14.638366] (-) TimerEvent: {}
+[15.566696] (-) TimerEvent: {}
+[16.055478] (-) TimerEvent: {}
+[16.266660] (-) TimerEvent: {}
+[16.430687] (-) TimerEvent: {}
+[16.634973] (-) TimerEvent: {}
+[16.819359] (-) TimerEvent: {}
+[17.036947] (-) TimerEvent: {}
+[17.238707] (-) TimerEvent: {}
+[17.412423] (-) TimerEvent: {}
+[17.576308] (-) TimerEvent: {}
+[17.730352] (-) TimerEvent: {}
+[17.904617] (-) TimerEvent: {}
+[18.100812] (-) TimerEvent: {}
+[18.274585] (-) TimerEvent: {}
+[18.425125] (-) TimerEvent: {}
+[18.595184] (-) TimerEvent: {}
+[18.803075] (-) TimerEvent: {}
+[19.020241] (-) TimerEvent: {}
+[19.296083] (-) TimerEvent: {}
+[19.516782] (-) TimerEvent: {}
+[19.734201] (-) TimerEvent: {}
+[20.052962] (-) TimerEvent: {}
+[20.459867] (-) TimerEvent: {}
+[20.776050] (-) TimerEvent: {}
+[20.998022] (-) TimerEvent: {}
+[21.274056] (-) TimerEvent: {}
+[21.591920] (-) TimerEvent: {}
+[21.904169] (-) TimerEvent: {}
+[22.223499] (-) TimerEvent: {}
+[22.512726] (-) TimerEvent: {}
+[22.842971] (-) TimerEvent: {}
+[23.296387] (-) TimerEvent: {}
+[23.649240] (-) TimerEvent: {}
+[24.186911] (-) TimerEvent: {}
+[24.677035] (-) TimerEvent: {}
+[25.092179] (-) TimerEvent: {}
+[25.586812] (-) TimerEvent: {}
+[25.828245] (-) TimerEvent: {}
+[26.073990] (-) TimerEvent: {}
+[26.339546] (-) TimerEvent: {}
+[26.521336] (-) TimerEvent: {}
+[26.792484] (-) TimerEvent: {}
+[27.102704] (-) TimerEvent: {}
+[27.376792] (-) TimerEvent: {}
+[27.596335] (-) TimerEvent: {}
+[27.786377] (-) TimerEvent: {}
+[28.010530] (-) TimerEvent: {}
+[28.237507] (-) TimerEvent: {}
+[28.426259] (-) TimerEvent: {}
+[28.867940] (-) TimerEvent: {}
+[29.233174] (-) TimerEvent: {}
+[29.596201] (-) TimerEvent: {}
+[29.885152] (-) TimerEvent: {}
+[30.998904] (-) TimerEvent: {}
+[31.431416] (-) TimerEvent: {}
+[31.660367] (-) TimerEvent: {}
+[32.002417] (-) TimerEvent: {}
+[32.219714] (-) TimerEvent: {}
+[32.386902] (-) TimerEvent: {}
+[32.628345] (-) TimerEvent: {}
+[32.819018] (-) TimerEvent: {}
+[32.988095] (-) TimerEvent: {}
+[33.193876] (-) TimerEvent: {}
+[33.393082] (-) TimerEvent: {}
+[33.581859] (-) TimerEvent: {}
+[33.751487] (-) TimerEvent: {}
+[34.001867] (-) TimerEvent: {}
+[34.347043] (-) TimerEvent: {}
+[34.552224] (-) TimerEvent: {}
+[34.795097] (-) TimerEvent: {}
+[35.050725] (-) TimerEvent: {}
+[35.298373] (-) TimerEvent: {}
+[35.573444] (-) TimerEvent: {}
+[35.908876] (-) TimerEvent: {}
+[36.259526] (-) TimerEvent: {}
+[36.824344] (-) TimerEvent: {}
+[37.155024] (-) TimerEvent: {}
+[37.409472] (-) TimerEvent: {}
+[37.666285] (-) TimerEvent: {}
+[37.949732] (-) TimerEvent: {}
+[38.144663] (-) TimerEvent: {}
+[38.396527] (-) TimerEvent: {}
+[38.624614] (-) TimerEvent: {}
+[38.911610] (-) TimerEvent: {}
+[39.318321] (-) TimerEvent: {}
+[39.564381] (-) TimerEvent: {}
+[39.900795] (-) TimerEvent: {}
+[40.318488] (-) TimerEvent: {}
+[40.753991] (-) TimerEvent: {}
+[41.031108] (-) TimerEvent: {}
+[41.258569] (-) TimerEvent: {}
+[41.457944] (-) TimerEvent: {}
+[41.658977] (-) TimerEvent: {}
+[41.873154] (-) TimerEvent: {}
+[42.066700] (-) TimerEvent: {}
+[42.256354] (-) TimerEvent: {}
+[42.470712] (-) TimerEvent: {}
+[42.703935] (-) TimerEvent: {}
+[42.979598] (-) TimerEvent: {}
+[43.281467] (-) TimerEvent: {}
+[43.482045] (-) TimerEvent: {}
+[43.726127] (-) TimerEvent: {}
+[44.058805] (-) TimerEvent: {}
+[44.437550] (-) TimerEvent: {}
+[45.010690] (-) TimerEvent: {}
+[45.585606] (-) TimerEvent: {}
+[46.059490] (-) TimerEvent: {}
+[46.405505] (-) TimerEvent: {}
+[46.931197] (-) TimerEvent: {}
+[47.386061] (-) TimerEvent: {}
+[48.025478] (hand_eye_calibration) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/scan_processing_node.dir/build.make:76: CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o] Interrupt\n'}
+[48.029714] (-) TimerEvent: {}
+[48.049215] (hand_eye_calibration) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/calibration_node.dir/build.make:76: CMakeFiles/calibration_node.dir/src/calibration_node.cpp.o] Interrupt\n'}
+[48.049288] (hand_eye_calibration) JobSkipped: {'identifier': 'hand_eye_calibration'}
+[48.049434] (-) EventReactorShutdown: {}

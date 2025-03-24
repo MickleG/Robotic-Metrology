@@ -1,0 +1,132 @@
+[0.000000] (-) TimerEvent: {}
+[0.000183] (hand_eye_calibration) JobQueued: {'identifier': 'hand_eye_calibration', 'dependencies': OrderedDict()}
+[0.000199] (hand_eye_calibration) JobStarted: {'identifier': 'hand_eye_calibration'}
+[0.005681] (hand_eye_calibration) JobProgress: {'identifier': 'hand_eye_calibration', 'progress': 'cmake'}
+[0.006252] (hand_eye_calibration) JobProgress: {'identifier': 'hand_eye_calibration', 'progress': 'build'}
+[0.006704] (hand_eye_calibration) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/parallels/calib_ws/build/hand_eye_calibration', '--', '-j2', '-l2'], 'cwd': '/home/parallels/calib_ws/build/hand_eye_calibration', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VTK_DEFAULT_RENDERER', 'Mesa'), ('USER', 'parallels'), ('MESA_LOADER_DRIVER_OVERRIDE', 'llvmpipe'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/jvm/java-11-openjdk-arm64/lib/libjawt.so'), ('HOME', '/home/parallels'), ('OLDPWD', '/home/parallels'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2085'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6eebf058caf05e71ca02930a67d74c06'), ('COLORTERM', 'truecolor'), ('VTK_RENDERER_BACKEND', 'OpenGL2'), ('COLCON_PREFIX_PATH', '/home/parallels/calib_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'parallels'), ('_', '/home/parallels/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'parallels'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/parallels/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-linux-22-04-desktop:@/tmp/.ICE-unix/2085,unix/ubuntu-linux-22-04-desktop:/tmp/.ICE-unix/2085'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/882fd45e_baa7_4d3c_884f_bb0886ff37ee'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/parallels/calib_ws/install/hand_eye_calibration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/parallels/calib_ws/build/hand_eye_calibration'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6eebf058caf05e71ca02930a67d74c06'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/parallels/calib_ws/install/hand_eye_calibration:/opt/ros/humble')]), 'shell': False}
+[0.081675] (hand_eye_calibration) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scan_processing_node\x1b[0m\n'}
+[0.099890] (-) TimerEvent: {}
+[0.146123] (hand_eye_calibration) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o\x1b[0m\n'}
+[0.149359] (hand_eye_calibration) StdoutLine: {'line': b'[ 75%] Built target calibration_node\n'}
+[0.199978] (-) TimerEvent: {}
+[0.301160] (-) TimerEvent: {}
+[0.401370] (-) TimerEvent: {}
+[0.501577] (-) TimerEvent: {}
+[0.604045] (-) TimerEvent: {}
+[0.704288] (-) TimerEvent: {}
+[0.804626] (-) TimerEvent: {}
+[0.904859] (-) TimerEvent: {}
+[1.005559] (-) TimerEvent: {}
+[1.106228] (-) TimerEvent: {}
+[1.206890] (-) TimerEvent: {}
+[1.307301] (-) TimerEvent: {}
+[1.407737] (-) TimerEvent: {}
+[1.508273] (-) TimerEvent: {}
+[1.609220] (-) TimerEvent: {}
+[1.709603] (-) TimerEvent: {}
+[1.811727] (-) TimerEvent: {}
+[1.912271] (-) TimerEvent: {}
+[2.012727] (-) TimerEvent: {}
+[2.114542] (-) TimerEvent: {}
+[2.216912] (-) TimerEvent: {}
+[2.319763] (-) TimerEvent: {}
+[2.422338] (-) TimerEvent: {}
+[2.525519] (-) TimerEvent: {}
+[2.629534] (-) TimerEvent: {}
+[2.733547] (-) TimerEvent: {}
+[2.837546] (-) TimerEvent: {}
+[2.938338] (-) TimerEvent: {}
+[3.039444] (-) TimerEvent: {}
+[3.140167] (-) TimerEvent: {}
+[3.240848] (-) TimerEvent: {}
+[3.341107] (-) TimerEvent: {}
+[3.441845] (-) TimerEvent: {}
+[3.534553] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid visualizePointCloud(pcl::PointCloud<pcl::PointXYZRGB>::Ptr, pcl::PointCloud<pcl::PointXYZRGB>::Ptr, std::string, pcl::visualization::PCLVisualizer)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.534781] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:92:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kpassing \xe2\x80\x98\x1b[01m\x1b[Kconst pcl::visualization::PCLVisualizer\x1b[m\x1b[K\xe2\x80\x99 as \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 argument discards qualifiers [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.534840] (hand_eye_calibration) StderrLine: {'line': b'   92 |     \x1b[01;31m\x1b[Kviewer.addPointCloud<PointXYZRGB>(cloud, name)\x1b[m\x1b[K;\n'}
+[3.534876] (hand_eye_calibration) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.534959] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:18\x1b[m\x1b[K:\n'}
+[3.534988] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:678:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  in call to \xe2\x80\x98\x1b[01m\x1b[Kbool pcl::visualization::PCLVisualizer::addPointCloud(const typename pcl::PointCloud<PointT>::ConstPtr&, const string&, int) [with PointT = pcl::PointXYZRGB; typename pcl::PointCloud<PointT>::ConstPtr = std::shared_ptr<const pcl::PointCloud<pcl::PointXYZRGB> >; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.535018] (hand_eye_calibration) StderrLine: {'line': b'  678 |         \x1b[01;36m\x1b[KaddPointCloud\x1b[m\x1b[K (const typename pcl::PointCloud<PointT>::ConstPtr &cloud,\n'}
+[3.535044] (hand_eye_calibration) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.535069] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:93:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kpassing \xe2\x80\x98\x1b[01m\x1b[Kconst pcl::visualization::PCLVisualizer\x1b[m\x1b[K\xe2\x80\x99 as \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 argument discards qualifiers [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.535108] (hand_eye_calibration) StderrLine: {'line': b'   93 |     \x1b[01;31m\x1b[Kviewer.addPointCloud<PointXYZRGB>(cloud2, name)\x1b[m\x1b[K;\n'}
+[3.535135] (hand_eye_calibration) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.535779] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:2369\x1b[m\x1b[K,\n'}
+[3.535812] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:18\x1b[m\x1b[K:\n'}
+[3.535834] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/visualization/impl/pcl_visualizer.hpp:77:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  in call to \xe2\x80\x98\x1b[01m\x1b[Kbool pcl::visualization::PCLVisualizer::addPointCloud(const typename pcl::PointCloud<PointT>::ConstPtr&, const string&, int) [with PointT = pcl::PointXYZRGB; typename pcl::PointCloud<PointT>::ConstPtr = std::shared_ptr<const pcl::PointCloud<pcl::PointXYZRGB> >; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.535858] (hand_eye_calibration) StderrLine: {'line': b'   77 | \x1b[01;36m\x1b[Kpcl\x1b[m\x1b[K::visualization::PCLVisualizer::addPointCloud (\n'}
+[3.535880] (hand_eye_calibration) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.535959] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:94:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kpassing \xe2\x80\x98\x1b[01m\x1b[Kconst pcl::visualization::PCLVisualizer\x1b[m\x1b[K\xe2\x80\x99 as \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 argument discards qualifiers [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.535991] (hand_eye_calibration) StderrLine: {'line': b'   94 |     \x1b[01;31m\x1b[Kviewer.setPointCloudRenderingProperties(pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 2, name)\x1b[m\x1b[K;\n'}
+[3.536014] (hand_eye_calibration) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.536036] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:18\x1b[m\x1b[K:\n'}
+[3.536065] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:1177:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  in call to \xe2\x80\x98\x1b[01m\x1b[Kbool pcl::visualization::PCLVisualizer::setPointCloudRenderingProperties(int, double, const string&, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.536099] (hand_eye_calibration) StderrLine: {'line': b' 1177 |         \x1b[01;36m\x1b[KsetPointCloudRenderingProperties\x1b[m\x1b[K (int property, double value,\n'}
+[3.536124] (hand_eye_calibration) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.536146] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:96:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kpassing \xe2\x80\x98\x1b[01m\x1b[Kconst pcl::visualization::PCLVisualizer\x1b[m\x1b[K\xe2\x80\x99 as \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 argument discards qualifiers [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.536172] (hand_eye_calibration) StderrLine: {'line': b'   96 |     \x1b[01;31m\x1b[Kviewer.spin()\x1b[m\x1b[K;\n'}
+[3.536195] (hand_eye_calibration) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[3.536217] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:18\x1b[m\x1b[K:\n'}
+[3.536239] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:285:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  in call to \xe2\x80\x98\x1b[01m\x1b[Kvoid pcl::visualization::PCLVisualizer::spin()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.536263] (hand_eye_calibration) StderrLine: {'line': b'  285 |         \x1b[01;36m\x1b[Kspin\x1b[m\x1b[K ();\n'}
+[3.536285] (hand_eye_calibration) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.537420] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KPointCloudProcessor::PointCloudProcessor()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.537483] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:125:103:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kpcl::visualization::PCLVisualizer::PCLVisualizer(pcl::visualization::PCLVisualizer*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.537534] (hand_eye_calibration) StderrLine: {'line': b'  125 |         pcl::visualization::PCLVisualizer viewer(new pcl::visualization::PCLVisualizer("Cloud Viewer")\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[3.537581] (hand_eye_calibration) StderrLine: {'line': b'      |                                                                                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.537628] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:18\x1b[m\x1b[K:\n'}
+[3.537674] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:139:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kpcl::visualization::PCLVisualizer::PCLVisualizer(int&, char**, vtkSmartPointer<vtkRenderer>, vtkSmartPointer<vtkRenderWindow>, const string&, pcl::visualization::PCLVisualizerInteractorStyle*, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.537721] (hand_eye_calibration) StderrLine: {'line': b'  139 |         \x1b[01;36m\x1b[KPCLVisualizer\x1b[m\x1b[K (int &argc, char **argv, vtkSmartPointer<vtkRenderer> ren, vtkSmartPointer<vtkRenderWindow> wind, const std::string &name = "",\n'}
+[3.537768] (hand_eye_calibration) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.537813] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:139:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 7 arguments, 1 provided\n'}
+[3.537868] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:129:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kpcl::visualization::PCLVisualizer::PCLVisualizer(vtkSmartPointer<vtkRenderer>, vtkSmartPointer<vtkRenderWindow>, const string&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.537916] (hand_eye_calibration) StderrLine: {'line': b'  129 |         \x1b[01;36m\x1b[KPCLVisualizer\x1b[m\x1b[K (vtkSmartPointer<vtkRenderer> ren, vtkSmartPointer<vtkRenderWindow> wind, const std::string &name = "", const bool create_interactor = true);\n'}
+[3.537962] (hand_eye_calibration) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.538018] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:129:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[3.538063] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:121:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kpcl::visualization::PCLVisualizer::PCLVisualizer(int&, char**, const string&, pcl::visualization::PCLVisualizerInteractorStyle*, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.538111] (hand_eye_calibration) StderrLine: {'line': b'  121 |         \x1b[01;36m\x1b[KPCLVisualizer\x1b[m\x1b[K (int &argc, char **argv, const std::string &name = "",\n'}
+[3.538158] (hand_eye_calibration) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.538214] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:121:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 5 arguments, 1 provided\n'}
+[3.538259] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:111:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kpcl::visualization::PCLVisualizer::PCLVisualizer(const string&, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.538314] (hand_eye_calibration) StderrLine: {'line': b'  111 |         \x1b[01;36m\x1b[KPCLVisualizer\x1b[m\x1b[K (const std::string &name = "", const bool create_interactor = true);\n'}
+[3.538359] (hand_eye_calibration) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.538404] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:111:43:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kpcl::visualization::PCLVisualizer*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst string&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<char>&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[3.538452] (hand_eye_calibration) StderrLine: {'line': b'  111 |         PCLVisualizer (\x1b[01;36m\x1b[Kconst std::string &name = ""\x1b[m\x1b[K, const bool create_interactor = true);\n'}
+[3.538510] (hand_eye_calibration) StderrLine: {'line': b'      |                        \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.538555] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:93:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kpcl::visualization::PCLVisualizer::PCLVisualizer(const pcl::visualization::PCLVisualizer&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.538606] (hand_eye_calibration) StderrLine: {'line': b'   93 |     class PCL_EXPORTS \x1b[01;36m\x1b[KPCLVisualizer\x1b[m\x1b[K\n'}
+[3.538659] (hand_eye_calibration) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.538705] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:93:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kpcl::visualization::PCLVisualizer*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst pcl::visualization::PCLVisualizer&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.542690] (-) TimerEvent: {}
+[3.643528] (-) TimerEvent: {}
+[3.745083] (-) TimerEvent: {}
+[3.847029] (-) TimerEvent: {}
+[3.947283] (-) TimerEvent: {}
+[4.048714] (-) TimerEvent: {}
+[4.149299] (-) TimerEvent: {}
+[4.250021] (-) TimerEvent: {}
+[4.350287] (-) TimerEvent: {}
+[4.450593] (-) TimerEvent: {}
+[4.550907] (-) TimerEvent: {}
+[4.651598] (-) TimerEvent: {}
+[4.752184] (-) TimerEvent: {}
+[4.852571] (-) TimerEvent: {}
+[4.953303] (-) TimerEvent: {}
+[5.054572] (-) TimerEvent: {}
+[5.154852] (-) TimerEvent: {}
+[5.255121] (-) TimerEvent: {}
+[5.355487] (-) TimerEvent: {}
+[5.455715] (-) TimerEvent: {}
+[5.555944] (-) TimerEvent: {}
+[5.656207] (-) TimerEvent: {}
+[5.756474] (-) TimerEvent: {}
+[5.856715] (-) TimerEvent: {}
+[5.956971] (-) TimerEvent: {}
+[5.976602] (hand_eye_calibration) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/scan_processing_node.dir/build.make:76: CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o] Error 1\n'}
+[5.980547] (hand_eye_calibration) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/scan_processing_node.dir/all] Error 2\n'}
+[5.981952] (hand_eye_calibration) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.032717] (hand_eye_calibration) CommandEnded: {'returncode': 2}
+[6.057038] (-) TimerEvent: {}
+[6.080132] (hand_eye_calibration) JobEnded: {'identifier': 'hand_eye_calibration', 'rc': 2}
+[6.095744] (-) EventReactorShutdown: {}

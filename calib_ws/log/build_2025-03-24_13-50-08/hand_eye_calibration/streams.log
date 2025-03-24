@@ -1,0 +1,41 @@
+[0.007s] Invoking command in '/home/parallels/calib_ws/build/hand_eye_calibration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/calib_ws/build/hand_eye_calibration -- -j2 -l2
+[0.057s] [35m[1mConsolidate compiler generated dependencies of target scan_processing_node[0m
+[0.127s] [ 50%] Built target calibration_node
+[0.128s] [ 75%] [32mBuilding CXX object CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o[0m
+[7.254s] [100%] [32m[1mLinking CXX executable scan_processing_node[0m
+[7.895s] [100%] Built target scan_processing_node
+[7.931s] Invoked command in '/home/parallels/calib_ws/build/hand_eye_calibration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/calib_ws/build/hand_eye_calibration -- -j2 -l2
+[7.948s] Invoking command in '/home/parallels/calib_ws/build/hand_eye_calibration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/parallels/calib_ws/build/hand_eye_calibration
+[7.950s] -- Install configuration: ""
+[7.951s] -- Installing: /home/parallels/calib_ws/install/hand_eye_calibration/lib/hand_eye_calibration/scan_processing_node
+[7.953s] -- Set runtime path of "/home/parallels/calib_ws/install/hand_eye_calibration/lib/hand_eye_calibration/scan_processing_node" to ""
+[7.954s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/include
+[7.954s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/include/hand_eye_calibration
+[7.954s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/include/hand_eye_calibration/scan_processing_node.hpp
+[7.954s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/include/hand_eye_calibration/calibration_node.hpp
+[7.954s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/launch
+[7.954s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/launch/hand_eye_calibration_launch.py
+[7.955s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/data
+[7.955s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/data/calibration
+[7.955s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/data/calibration/synthetic_scans.dat
+[7.955s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/data/calibration/calibration_board_points.dat
+[7.955s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/data/calibration/flange_poses.dat
+[7.955s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/data/scan_processing
+[7.956s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/data/scan_processing/scan2.dat
+[7.956s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/data/scan_processing/scan1.dat
+[7.956s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/ament_index/resource_index/package_run_dependencies/hand_eye_calibration
+[7.956s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/ament_index/resource_index/parent_prefix_path/hand_eye_calibration
+[7.957s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/environment/ament_prefix_path.sh
+[7.958s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/environment/ament_prefix_path.dsv
+[7.958s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/environment/path.sh
+[7.958s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/environment/path.dsv
+[7.958s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/local_setup.bash
+[7.958s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/local_setup.sh
+[7.958s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/local_setup.zsh
+[7.958s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/local_setup.dsv
+[7.958s] -- Installing: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/package.dsv
+[7.958s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/ament_index/resource_index/packages/hand_eye_calibration
+[7.959s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/cmake/hand_eye_calibrationConfig.cmake
+[7.959s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/cmake/hand_eye_calibrationConfig-version.cmake
+[7.959s] -- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/package.xml
+[7.965s] Invoked command in '/home/parallels/calib_ws/build/hand_eye_calibration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/parallels/calib_ws/build/hand_eye_calibration

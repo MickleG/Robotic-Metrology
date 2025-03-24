@@ -1,0 +1,4 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o[0m
+[ 50%] [32m[1mLinking CXX executable scan_processing_node[0m
+[ 50%] Built target scan_processing_node
+[ 75%] [32mBuilding CXX object CMakeFiles/calibration_node.dir/src/calibration_node.cpp.o[0m

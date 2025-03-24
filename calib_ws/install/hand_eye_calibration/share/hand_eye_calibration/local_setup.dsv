@@ -1,0 +1,2 @@
+source;share/hand_eye_calibration/environment/ament_prefix_path.sh
+source;share/hand_eye_calibration/environment/path.sh

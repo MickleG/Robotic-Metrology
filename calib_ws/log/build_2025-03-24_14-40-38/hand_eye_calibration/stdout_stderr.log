@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target scan_processing_node[0m
+[ 50%] Built target calibration_node
+[ 75%] [32mBuilding CXX object CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o[0m
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:[m[K In constructor ‘[01m[KPointCloudProcessor::PointCloudProcessor()[m[K’:
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:226:38:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Kmisaligned_clouds[m[K’ from ‘[01m[Kvector<[01;32m[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >[m[K>[m[K’ to ‘[01m[Kvector<[01;32m[Kstd::vector<std::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> > >[m[K>[m[K’
+  226 |         visualizeMultiplePointClouds([01;31m[Kmisaligned_clouds[m[K, aligned_cloud_vec);
+      |                                      [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                      [01;31m[K|[m[K
+      |                                      [01;31m[Kvector<std::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >>[m[K
+gmake[2]: *** [CMakeFiles/scan_processing_node.dir/build.make:76: CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/scan_processing_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

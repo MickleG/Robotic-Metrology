@@ -1,0 +1,21 @@
+[0.006s] Invoking command in '/home/parallels/calib_ws/build/hand_eye_calibration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/calib_ws/build/hand_eye_calibration -- -j2 -l2
+[0.079s] [35m[1mConsolidate compiler generated dependencies of target calibration_node[0m
+[0.154s] [ 25%] [32mBuilding CXX object CMakeFiles/calibration_node.dir/src/calibration_node.cpp.o[0m
+[0.160s] [ 75%] Built target scan_processing_node
+[3.571s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:[m[K In member function ‘[01m[Kvoid CalibrationNode::calculateTCamEE(Eigen::Matrix4d&, Eigen::VectorXd&, Eigen::Matrix4d&)[m[K’:
+[3.571s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:312:45:[m[K [01;31m[Kerror: [m[K‘[01m[KT[m[K’ was not declared in this scope; did you mean ‘[01m[Kpcl::deprecated::T[m[K’?
+[3.571s]   312 |         T_cam_ee = enforceAffineConstraints([01;31m[KT[m[K);
+[3.571s]       |                                             [01;31m[K^[m[K
+[3.571s]       |                                             [32m[Kpcl::deprecated::T[m[K
+[3.571s] In file included from [01m[K/usr/include/pcl-1.12/pcl/memory.h:46[m[K,
+[3.572s]                  from [01m[K/usr/include/pcl-1.12/pcl/pcl_base.h:46[m[K,
+[3.572s]                  from [01m[K/usr/include/pcl-1.12/pcl/correspondence.h:45[m[K,
+[3.572s]                  from [01m[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:42[m[K,
+[3.572s]                  from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:7[m[K:
+[3.572s] [01m[K/usr/include/pcl-1.12/pcl/type_traits.h:56:12:[m[K [01;36m[Knote: [m[K‘[01m[Kpcl::deprecated::T[m[K’ declared here
+[3.572s]    56 |     struct [01;36m[KT[m[K {};
+[3.572s]       |            [01;36m[K^[m[K
+[5.987s] gmake[2]: *** [CMakeFiles/calibration_node.dir/build.make:76: CMakeFiles/calibration_node.dir/src/calibration_node.cpp.o] Error 1
+[5.990s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/calibration_node.dir/all] Error 2
+[5.991s] gmake: *** [Makefile:146: all] Error 2
+[6.057s] Invoked command in '/home/parallels/calib_ws/build/hand_eye_calibration' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/calib_ws/build/hand_eye_calibration -- -j2 -l2

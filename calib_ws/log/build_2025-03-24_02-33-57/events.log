@@ -1,0 +1,90 @@
+[0.000000] (-) TimerEvent: {}
+[0.000203] (hand_eye_calibration) JobQueued: {'identifier': 'hand_eye_calibration', 'dependencies': OrderedDict()}
+[0.000221] (hand_eye_calibration) JobStarted: {'identifier': 'hand_eye_calibration'}
+[0.005113] (hand_eye_calibration) JobProgress: {'identifier': 'hand_eye_calibration', 'progress': 'cmake'}
+[0.005730] (hand_eye_calibration) JobProgress: {'identifier': 'hand_eye_calibration', 'progress': 'build'}
+[0.006292] (hand_eye_calibration) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/parallels/calib_ws/build/hand_eye_calibration', '--', '-j2', '-l2'], 'cwd': '/home/parallels/calib_ws/build/hand_eye_calibration', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VTK_DEFAULT_RENDERER', 'Mesa'), ('USER', 'parallels'), ('MESA_LOADER_DRIVER_OVERRIDE', 'llvmpipe'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/jvm/java-11-openjdk-arm64/lib/libjawt.so'), ('HOME', '/home/parallels'), ('OLDPWD', '/home/parallels'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2085'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6eebf058caf05e71ca02930a67d74c06'), ('COLORTERM', 'truecolor'), ('VTK_RENDERER_BACKEND', 'OpenGL2'), ('COLCON_PREFIX_PATH', '/home/parallels/calib_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'parallels'), ('_', '/home/parallels/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'parallels'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/parallels/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-linux-22-04-desktop:@/tmp/.ICE-unix/2085,unix/ubuntu-linux-22-04-desktop:/tmp/.ICE-unix/2085'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/882fd45e_baa7_4d3c_884f_bb0886ff37ee'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/parallels/calib_ws/install/hand_eye_calibration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/parallels/calib_ws/build/hand_eye_calibration'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6eebf058caf05e71ca02930a67d74c06'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/parallels/calib_ws/install/hand_eye_calibration:/opt/ros/humble')]), 'shell': False}
+[0.059016] (hand_eye_calibration) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.089561] (hand_eye_calibration) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.099903] (-) TimerEvent: {}
+[0.154889] (hand_eye_calibration) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.156771] (hand_eye_calibration) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.162106] (hand_eye_calibration) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.168530] (hand_eye_calibration) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.177221] (hand_eye_calibration) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.199026] (hand_eye_calibration) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.200174] (-) TimerEvent: {}
+[0.200363] (hand_eye_calibration) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.263689] (hand_eye_calibration) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.300771] (-) TimerEvent: {}
+[0.352988] (hand_eye_calibration) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.10") found components: Interpreter Development.Module Development.Embed \n'}
+[0.400865] (-) TimerEvent: {}
+[0.501124] (-) TimerEvent: {}
+[0.601631] (-) TimerEvent: {}
+[0.693363] (hand_eye_calibration) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[0.701740] (-) TimerEvent: {}
+[0.711206] (hand_eye_calibration) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)\n'}
+[0.791843] (hand_eye_calibration) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[0.794914] (hand_eye_calibration) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[0.795030] (hand_eye_calibration) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[0.801923] (-) TimerEvent: {}
+[0.869890] (hand_eye_calibration) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[0.872399] (hand_eye_calibration) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[0.875041] (hand_eye_calibration) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[0.902029] (-) TimerEvent: {}
+[0.950247] (hand_eye_calibration) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[1.002168] (-) TimerEvent: {}
+[1.024467] (hand_eye_calibration) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.093013] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[1.093185] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[1.093346] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[1.093501] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[1.093661] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[1.093824] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[1.093989] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[1.094128] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[1.094255] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[1.094437] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[1.094612] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[1.094758] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[1.094963] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[1.095154] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[1.095327] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[1.095514] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[1.095694] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[1.095862] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[1.096076] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[1.096228] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[1.096579] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[1.096701] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[1.096818] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[1.096953] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[1.097206] (hand_eye_calibration) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[1.098965] (hand_eye_calibration) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.102455] (-) TimerEvent: {}
+[1.102754] (hand_eye_calibration) StdoutLine: {'line': b'-- PCL_INCLUDE_DIRS: /usr/include/pcl-1.12;/usr/include/eigen3;/usr/include;/usr/include/ni;/usr/include/openni2\n'}
+[1.135930] (hand_eye_calibration) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.161883] (hand_eye_calibration) StdoutLine: {'line': b'-- Generating done\n'}
+[1.169593] (hand_eye_calibration) StdoutLine: {'line': b'-- Build files have been written to: /home/parallels/calib_ws/build/hand_eye_calibration\n'}
+[1.184865] (hand_eye_calibration) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target calibration_node\x1b[0m\n'}
+[1.187277] (hand_eye_calibration) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o\x1b[0m\n'}
+[1.202541] (-) TimerEvent: {}
+[1.255977] (hand_eye_calibration) StdoutLine: {'line': b'[ 75%] Built target calibration_node\n'}
+[1.302625] (-) TimerEvent: {}
+[1.402835] (-) TimerEvent: {}
+[1.503457] (-) TimerEvent: {}
+[1.605018] (-) TimerEvent: {}
+[1.705299] (-) TimerEvent: {}
+[1.805651] (-) TimerEvent: {}
+[1.907655] (-) TimerEvent: {}
+[2.007863] (-) TimerEvent: {}
+[2.075337] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:5:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kpcl/filters/moving_least_squares.h: No such file or directory\n'}
+[2.075450] (hand_eye_calibration) StderrLine: {'line': b'    5 | #include \x1b[01;31m\x1b[K<pcl/filters/moving_least_squares.h>\x1b[m\x1b[K\n'}
+[2.075484] (hand_eye_calibration) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.075508] (hand_eye_calibration) StderrLine: {'line': b'compilation terminated.\n'}
+[2.082342] (hand_eye_calibration) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/scan_processing_node.dir/build.make:76: CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o] Error 1\n'}
+[2.082534] (hand_eye_calibration) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/scan_processing_node.dir/all] Error 2\n'}
+[2.082568] (hand_eye_calibration) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[2.083846] (hand_eye_calibration) CommandEnded: {'returncode': 2}
+[2.087696] (hand_eye_calibration) JobEnded: {'identifier': 'hand_eye_calibration', 'rc': 2}
+[2.098453] (-) EventReactorShutdown: {}

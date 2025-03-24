@@ -1,0 +1,7 @@
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:[m[K In function ‘[01m[Kvoid visualizePointCloud(pcl::PointCloud<pcl::PointXYZRGB>::Ptr, const string&, const Ptr&)[m[K’:
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:98:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst Ptr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<pcl::visualization::PCLVisualizer>[m[K’} has no member named ‘[01m[Kspin[m[K’
+   98 |     viewer.[01;31m[Kspin[m[K();
+      |            [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/scan_processing_node.dir/build.make:76: CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/scan_processing_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

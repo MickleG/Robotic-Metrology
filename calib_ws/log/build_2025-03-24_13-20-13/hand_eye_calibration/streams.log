@@ -1,0 +1,12 @@
+[0.007s] Invoking command in '/home/parallels/calib_ws/build/hand_eye_calibration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/calib_ws/build/hand_eye_calibration -- -j2 -l2
+[0.058s] [35m[1mConsolidate compiler generated dependencies of target scan_processing_node[0m
+[0.127s] [ 50%] Built target calibration_node
+[0.130s] [ 75%] [32mBuilding CXX object CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o[0m
+[3.540s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:[m[K In function ‘[01m[Kvoid visualizePointCloud(pcl::PointCloud<pcl::PointXYZRGB>::Ptr, const string&, const Ptr&)[m[K’:
+[3.540s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:98:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst Ptr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<pcl::visualization::PCLVisualizer>[m[K’} has no member named ‘[01m[Kspin[m[K’
+[3.540s]    98 |     viewer.[01;31m[Kspin[m[K();
+[3.540s]       |            [01;31m[K^~~~[m[K
+[6.070s] gmake[2]: *** [CMakeFiles/scan_processing_node.dir/build.make:76: CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o] Error 1
+[6.073s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/scan_processing_node.dir/all] Error 2
+[6.074s] gmake: *** [Makefile:146: all] Error 2
+[6.123s] Invoked command in '/home/parallels/calib_ws/build/hand_eye_calibration' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/calib_ws/build/hand_eye_calibration -- -j2 -l2

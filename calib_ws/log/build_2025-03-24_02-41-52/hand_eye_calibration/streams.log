@@ -1,0 +1,65 @@
+[0.004s] Invoking command in '/home/parallels/calib_ws/build/hand_eye_calibration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/calib_ws/build/hand_eye_calibration -- -j2 -l2
+[0.017s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.043s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.086s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.087s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.090s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.094s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.100s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.116s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.117s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.166s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.232s] -- Found Python3: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.10") found components: Interpreter Development.Module Development.Embed 
+[0.460s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.475s] -- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)
+[0.558s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.561s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.561s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[0.641s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.644s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.646s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.719s] -- Found Qhull version 8.0.2
+[0.791s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.860s] -- looking for PCL_COMMON
+[0.860s] -- looking for PCL_KDTREE
+[0.860s] -- looking for PCL_OCTREE
+[0.860s] -- looking for PCL_SEARCH
+[0.860s] -- looking for PCL_SAMPLE_CONSENSUS
+[0.860s] -- looking for PCL_FILTERS
+[0.860s] -- looking for PCL_2D
+[0.861s] -- looking for PCL_GEOMETRY
+[0.861s] -- looking for PCL_IO
+[0.861s] -- looking for PCL_FEATURES
+[0.861s] -- looking for PCL_ML
+[0.861s] -- looking for PCL_SEGMENTATION
+[0.861s] -- looking for PCL_VISUALIZATION
+[0.862s] -- looking for PCL_SURFACE
+[0.862s] -- looking for PCL_REGISTRATION
+[0.862s] -- looking for PCL_KEYPOINTS
+[0.862s] -- looking for PCL_TRACKING
+[0.862s] -- looking for PCL_RECOGNITION
+[0.862s] -- looking for PCL_STEREO
+[0.863s] -- looking for PCL_APPS
+[0.863s] -- looking for PCL_IN_HAND_SCANNER
+[0.863s] -- looking for PCL_MODELER
+[0.863s] -- looking for PCL_POINT_CLOUD_EDITOR
+[0.863s] -- looking for PCL_OUTOFCORE
+[0.864s] -- looking for PCL_PEOPLE
+[0.864s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.866s] -- PCL_INCLUDE_DIRS: /usr/include/pcl-1.12;/usr/include/eigen3;/usr/include;/usr/include/ni;/usr/include/openni2
+[0.866s] -- scan_processing_node PCL_INCLUDE_DIRS: /usr/include/pcl-1.12;/usr/include/eigen3;/usr/include;/usr/include/ni;/usr/include/openni2
+[0.866s] -- calibration_node PCL_INCLUDE_DIRS: /usr/include/pcl-1.12;/usr/include/eigen3;/usr/include;/usr/include/ni;/usr/include/openni2
+[0.896s] -- Configuring done
+[0.915s] -- Generating done
+[0.923s] -- Build files have been written to: /home/parallels/calib_ws/build/hand_eye_calibration
+[0.939s] [35m[1mConsolidate compiler generated dependencies of target calibration_node[0m
+[0.946s] [ 25%] [32mBuilding CXX object CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o[0m
+[0.954s] [ 75%] Built target calibration_node
+[1.725s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:9:10:[m[K [01;31m[Kfatal error: [m[Kpcl/ros/point_cloud.h: No such file or directory
+[1.725s]     9 | #include [01;31m[K<pcl/ros/point_cloud.h>[m[K
+[1.725s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.725s] compilation terminated.
+[1.732s] gmake[2]: *** [CMakeFiles/scan_processing_node.dir/build.make:76: CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o] Error 1
+[1.732s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/scan_processing_node.dir/all] Error 2
+[1.732s] gmake: *** [Makefile:146: all] Error 2
+[1.733s] Invoked command in '/home/parallels/calib_ws/build/hand_eye_calibration' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/calib_ws/build/hand_eye_calibration -- -j2 -l2

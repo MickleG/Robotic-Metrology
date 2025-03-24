@@ -1,0 +1,14 @@
+[0.005s] Invoking command in '/home/parallels/calib_ws/build/hand_eye_calibration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/calib_ws/build/hand_eye_calibration -- -j2 -l2
+[0.037s] [ 25%] [32mBuilding CXX object CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o[0m
+[0.039s] [ 75%] Built target calibration_node
+[3.482s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:[m[K In constructor ‘[01m[KPointCloudProcessor::PointCloudProcessor()[m[K’:
+[3.482s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:114:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing Ptr = class std::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >[m[K’} has no member named ‘[01m[Ksize[m[K’
+[3.482s]   114 |         cout << "pc1 size: " << cloud1.[01;31m[Ksize[m[K() << endl;
+[3.482s]       |                                        [01;31m[K^~~~[m[K
+[3.482s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:115:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing Ptr = class std::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >[m[K’} has no member named ‘[01m[Ksize[m[K’
+[3.482s]   115 |         cout << "pc2 size: " << cloud2.[01;31m[Ksize[m[K() << endl;
+[3.482s]       |                                        [01;31m[K^~~~[m[K
+[5.912s] gmake[2]: *** [CMakeFiles/scan_processing_node.dir/build.make:76: CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o] Error 1
+[5.915s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/scan_processing_node.dir/all] Error 2
+[5.917s] gmake: *** [Makefile:146: all] Error 2
+[5.968s] Invoked command in '/home/parallels/calib_ws/build/hand_eye_calibration' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/calib_ws/build/hand_eye_calibration -- -j2 -l2

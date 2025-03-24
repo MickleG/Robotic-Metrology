@@ -1,0 +1,7 @@
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:[m[K In member function ‘[01m[KEigen::Matrix4d CalibrationNode::compute_T_cam_ee(std::vector<Eigen::Matrix<double, 4, 4> >, std::vector<std::vector<Eigen::Matrix<double, 4, 1> > >&, std::vector<std::vector<Eigen::Matrix<double, 4, 1> > >&)[m[K’:
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:357:33:[m[K [01;31m[Kerror: [m[K‘[01m[KnumSets[m[K’ was not declared in this scope
+  357 |         T_ee_cam_accumulator /= [01;31m[KnumSets[m[K;
+      |                                 [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/calibration_node.dir/build.make:76: CMakeFiles/calibration_node.dir/src/calibration_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/calibration_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,90 @@
+[0.006s] Invoking command in '/home/parallels/calib_ws/build/hand_eye_calibration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/calib_ws/build/hand_eye_calibration -- -j2 -l2
+[0.078s] [35m[1mConsolidate compiler generated dependencies of target scan_processing_node[0m
+[0.134s] [ 25%] [32mBuilding CXX object CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o[0m
+[0.136s] [ 75%] Built target calibration_node
+[3.528s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:[m[K In function ‘[01m[Kpcl::PointCloud<pcl::PointXYZ>::Ptr loadPointCloud(const string&)[m[K’:
+[3.528s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:24:46:[m[K [01;31m[Kerror: [m[Kclass template argument deduction failed:
+[3.529s]    24 |     PointCloud<pcl::PointXYZ>::Ptr cloud(new [01;31m[KPointCloud[m[K);
+[3.529s]       |                                              [01;31m[K^~~~~~~~~~[m[K
+[3.529s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:24:46:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KPointCloud()[m[K’
+[3.532s] In file included from [01m[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44[m[K,
+[3.532s]                  from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4[m[K:
+[3.532s] [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:201:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointT> PointCloud(uint32_t, uint32_t, const PointT&)-> pcl::PointCloud<PointT>[m[K’
+[3.532s]   201 |       [01;36m[KPointCloud[m[K (std::uint32_t width_, std::uint32_t height_, const PointT& value_ = PointT ())
+[3.532s]       |       [01;36m[K^~~~~~~~~~[m[K
+[3.532s] [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:201:7:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.532s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:24:46:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[3.532s]    24 |     PointCloud<pcl::PointXYZ>::Ptr cloud(new [01;36m[KPointCloud[m[K);
+[3.532s]       |                                              [01;36m[K^~~~~~~~~~[m[K
+[3.532s] In file included from [01m[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44[m[K,
+[3.532s]                  from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4[m[K:
+[3.532s] [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:185:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointT> PointCloud(const pcl::PointCloud<PointT>&, const Indices&)-> pcl::PointCloud<PointT>[m[K’
+[3.532s]   185 |       [01;36m[KPointCloud[m[K (const PointCloud<PointT> &pc,
+[3.532s]       |       [01;36m[K^~~~~~~~~~[m[K
+[3.532s] [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:185:7:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.532s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:24:46:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[3.532s]    24 |     PointCloud<pcl::PointXYZ>::Ptr cloud(new [01;36m[KPointCloud[m[K);
+[3.532s]       |                                              [01;36m[K^~~~~~~~~~[m[K
+[3.532s] In file included from [01m[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44[m[K,
+[3.532s]                  from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4[m[K:
+[3.532s] [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:179:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointT> PointCloud()-> pcl::PointCloud<PointT>[m[K’
+[3.533s]   179 |       [01;36m[KPointCloud[m[K () = default;
+[3.533s]       |       [01;36m[K^~~~~~~~~~[m[K
+[3.533s] [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:179:7:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.533s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:24:46:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KPointT[m[K’
+[3.533s]    24 |     PointCloud<pcl::PointXYZ>::Ptr cloud(new [01;36m[KPointCloud[m[K);
+[3.533s]       |                                              [01;36m[K^~~~~~~~~~[m[K
+[3.533s] In file included from [01m[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44[m[K,
+[3.533s]                  from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4[m[K:
+[3.533s] [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:71:36:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointT> PointCloud(pcl::PointCloud<PointT>)-> pcl::PointCloud<PointT>[m[K’
+[3.533s]    71 |   template <typename PointT> class [01;36m[KPointCloud[m[K;
+[3.533s]       |                                    [01;36m[K^~~~~~~~~~[m[K
+[3.533s] [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:71:36:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.533s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:24:46:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[3.533s]    24 |     PointCloud<pcl::PointXYZ>::Ptr cloud(new [01;36m[KPointCloud[m[K);
+[3.533s]       |                                              [01;36m[K^~~~~~~~~~[m[K
+[3.540s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:[m[K In function ‘[01m[Kpcl::PointCloud<pcl::PointXYZ>::Ptr alignPointClouds(pcl::PointCloud<pcl::PointXYZ>::Ptr, pcl::PointCloud<pcl::PointXYZ>::Ptr)[m[K’:
+[3.540s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:70:48:[m[K [01;31m[Kerror: [m[Kclass template argument deduction failed:
+[3.540s]    70 |     PointCloud<pcl::PointXYZ>::Ptr aligned(new [01;31m[KPointCloud[m[K);
+[3.540s]       |                                                [01;31m[K^~~~~~~~~~[m[K
+[3.540s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:70:48:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KPointCloud()[m[K’
+[3.540s] In file included from [01m[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44[m[K,
+[3.540s]                  from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4[m[K:
+[3.540s] [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:201:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointT> PointCloud(uint32_t, uint32_t, const PointT&)-> pcl::PointCloud<PointT>[m[K’
+[3.540s]   201 |       [01;36m[KPointCloud[m[K (std::uint32_t width_, std::uint32_t height_, const PointT& value_ = PointT ())
+[3.540s]       |       [01;36m[K^~~~~~~~~~[m[K
+[3.540s] [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:201:7:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.540s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:70:48:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[3.540s]    70 |     PointCloud<pcl::PointXYZ>::Ptr aligned(new [01;36m[KPointCloud[m[K);
+[3.540s]       |                                                [01;36m[K^~~~~~~~~~[m[K
+[3.540s] In file included from [01m[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44[m[K,
+[3.540s]                  from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4[m[K:
+[3.540s] [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:185:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointT> PointCloud(const pcl::PointCloud<PointT>&, const Indices&)-> pcl::PointCloud<PointT>[m[K’
+[3.540s]   185 |       [01;36m[KPointCloud[m[K (const PointCloud<PointT> &pc,
+[3.540s]       |       [01;36m[K^~~~~~~~~~[m[K
+[3.540s] [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:185:7:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.541s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:70:48:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[3.541s]    70 |     PointCloud<pcl::PointXYZ>::Ptr aligned(new [01;36m[KPointCloud[m[K);
+[3.541s]       |                                                [01;36m[K^~~~~~~~~~[m[K
+[3.541s] In file included from [01m[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44[m[K,
+[3.541s]                  from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4[m[K:
+[3.541s] [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:179:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointT> PointCloud()-> pcl::PointCloud<PointT>[m[K’
+[3.541s]   179 |       [01;36m[KPointCloud[m[K () = default;
+[3.541s]       |       [01;36m[K^~~~~~~~~~[m[K
+[3.541s] [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:179:7:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.541s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:70:48:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KPointT[m[K’
+[3.541s]    70 |     PointCloud<pcl::PointXYZ>::Ptr aligned(new [01;36m[KPointCloud[m[K);
+[3.541s]       |                                                [01;36m[K^~~~~~~~~~[m[K
+[3.541s] In file included from [01m[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44[m[K,
+[3.541s]                  from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4[m[K:
+[3.541s] [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:71:36:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class PointT> PointCloud(pcl::PointCloud<PointT>)-> pcl::PointCloud<PointT>[m[K’
+[3.541s]    71 |   template <typename PointT> class [01;36m[KPointCloud[m[K;
+[3.541s]       |                                    [01;36m[K^~~~~~~~~~[m[K
+[3.541s] [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:71:36:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.541s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:70:48:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[3.541s]    70 |     PointCloud<pcl::PointXYZ>::Ptr aligned(new [01;36m[KPointCloud[m[K);
+[3.541s]       |                                                [01;36m[K^~~~~~~~~~[m[K
+[6.234s] gmake[2]: *** [CMakeFiles/scan_processing_node.dir/build.make:76: CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o] Error 1
+[6.238s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/scan_processing_node.dir/all] Error 2
+[6.239s] gmake: *** [Makefile:146: all] Error 2
+[6.292s] Invoked command in '/home/parallels/calib_ws/build/hand_eye_calibration' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/calib_ws/build/hand_eye_calibration -- -j2 -l2

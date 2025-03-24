@@ -1,0 +1,159 @@
+[0.000000] (-) TimerEvent: {}
+[0.000182] (hand_eye_calibration) JobQueued: {'identifier': 'hand_eye_calibration', 'dependencies': OrderedDict()}
+[0.000199] (hand_eye_calibration) JobStarted: {'identifier': 'hand_eye_calibration'}
+[0.004697] (hand_eye_calibration) JobProgress: {'identifier': 'hand_eye_calibration', 'progress': 'cmake'}
+[0.005302] (hand_eye_calibration) JobProgress: {'identifier': 'hand_eye_calibration', 'progress': 'build'}
+[0.005757] (hand_eye_calibration) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/parallels/calib_ws/build/hand_eye_calibration', '--', '-j2', '-l2'], 'cwd': '/home/parallels/calib_ws/build/hand_eye_calibration', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VTK_DEFAULT_RENDERER', 'Mesa'), ('USER', 'parallels'), ('MESA_LOADER_DRIVER_OVERRIDE', 'llvmpipe'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/jvm/java-11-openjdk-arm64/lib/libjawt.so'), ('HOME', '/home/parallels'), ('OLDPWD', '/home/parallels'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2085'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6eebf058caf05e71ca02930a67d74c06'), ('COLORTERM', 'truecolor'), ('VTK_RENDERER_BACKEND', 'OpenGL2'), ('COLCON_PREFIX_PATH', '/home/parallels/calib_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'parallels'), ('_', '/home/parallels/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'parallels'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/parallels/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-linux-22-04-desktop:@/tmp/.ICE-unix/2085,unix/ubuntu-linux-22-04-desktop:/tmp/.ICE-unix/2085'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/882fd45e_baa7_4d3c_884f_bb0886ff37ee'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/parallels/calib_ws/install/hand_eye_calibration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/parallels/calib_ws/build/hand_eye_calibration'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6eebf058caf05e71ca02930a67d74c06'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/parallels/calib_ws/install/hand_eye_calibration:/opt/ros/humble')]), 'shell': False}
+[0.078013] (hand_eye_calibration) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scan_processing_node\x1b[0m\n'}
+[0.099775] (-) TimerEvent: {}
+[0.133645] (hand_eye_calibration) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o\x1b[0m\n'}
+[0.136074] (hand_eye_calibration) StdoutLine: {'line': b'[ 75%] Built target calibration_node\n'}
+[0.199897] (-) TimerEvent: {}
+[0.300249] (-) TimerEvent: {}
+[0.400520] (-) TimerEvent: {}
+[0.500939] (-) TimerEvent: {}
+[0.602214] (-) TimerEvent: {}
+[0.703281] (-) TimerEvent: {}
+[0.803601] (-) TimerEvent: {}
+[0.903831] (-) TimerEvent: {}
+[1.004023] (-) TimerEvent: {}
+[1.104273] (-) TimerEvent: {}
+[1.204526] (-) TimerEvent: {}
+[1.304878] (-) TimerEvent: {}
+[1.405340] (-) TimerEvent: {}
+[1.506130] (-) TimerEvent: {}
+[1.607125] (-) TimerEvent: {}
+[1.709057] (-) TimerEvent: {}
+[1.809513] (-) TimerEvent: {}
+[1.910359] (-) TimerEvent: {}
+[2.010617] (-) TimerEvent: {}
+[2.115035] (-) TimerEvent: {}
+[2.216204] (-) TimerEvent: {}
+[2.317942] (-) TimerEvent: {}
+[2.420426] (-) TimerEvent: {}
+[2.523770] (-) TimerEvent: {}
+[2.624009] (-) TimerEvent: {}
+[2.724324] (-) TimerEvent: {}
+[2.824547] (-) TimerEvent: {}
+[2.926094] (-) TimerEvent: {}
+[3.026766] (-) TimerEvent: {}
+[3.127084] (-) TimerEvent: {}
+[3.227474] (-) TimerEvent: {}
+[3.327761] (-) TimerEvent: {}
+[3.432866] (-) TimerEvent: {}
+[3.527799] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZ>::Ptr loadPointCloud(const string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.528632] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:24:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass template argument deduction failed:\n'}
+[3.528708] (hand_eye_calibration) StderrLine: {'line': b'   24 |     PointCloud<pcl::PointXYZ>::Ptr cloud(new \x1b[01;31m\x1b[KPointCloud\x1b[m\x1b[K);\n'}
+[3.528763] (hand_eye_calibration) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.528814] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:24:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KPointCloud()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.531697] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44\x1b[m\x1b[K,\n'}
+[3.531766] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4\x1b[m\x1b[K:\n'}
+[3.531814] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:201:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class PointT> PointCloud(uint32_t, uint32_t, const PointT&)-> pcl::PointCloud<PointT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.531869] (hand_eye_calibration) StderrLine: {'line': b'  201 |       \x1b[01;36m\x1b[KPointCloud\x1b[m\x1b[K (std::uint32_t width_, std::uint32_t height_, const PointT& value_ = PointT ())\n'}
+[3.531916] (hand_eye_calibration) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.531963] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:201:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.532010] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:24:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 0 provided\n'}
+[3.532057] (hand_eye_calibration) StderrLine: {'line': b'   24 |     PointCloud<pcl::PointXYZ>::Ptr cloud(new \x1b[01;36m\x1b[KPointCloud\x1b[m\x1b[K);\n'}
+[3.532103] (hand_eye_calibration) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.532148] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44\x1b[m\x1b[K,\n'}
+[3.532194] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4\x1b[m\x1b[K:\n'}
+[3.532240] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:185:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class PointT> PointCloud(const pcl::PointCloud<PointT>&, const Indices&)-> pcl::PointCloud<PointT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.532286] (hand_eye_calibration) StderrLine: {'line': b'  185 |       \x1b[01;36m\x1b[KPointCloud\x1b[m\x1b[K (const PointCloud<PointT> &pc,\n'}
+[3.532332] (hand_eye_calibration) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.532377] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:185:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.532423] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:24:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[3.532469] (hand_eye_calibration) StderrLine: {'line': b'   24 |     PointCloud<pcl::PointXYZ>::Ptr cloud(new \x1b[01;36m\x1b[KPointCloud\x1b[m\x1b[K);\n'}
+[3.532514] (hand_eye_calibration) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.532559] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44\x1b[m\x1b[K,\n'}
+[3.532604] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4\x1b[m\x1b[K:\n'}
+[3.532650] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:179:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class PointT> PointCloud()-> pcl::PointCloud<PointT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.532696] (hand_eye_calibration) StderrLine: {'line': b'  179 |       \x1b[01;36m\x1b[KPointCloud\x1b[m\x1b[K () = default;\n'}
+[3.532741] (hand_eye_calibration) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.532786] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:179:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.532834] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:24:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[KPointT\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.532882] (-) TimerEvent: {}
+[3.532976] (hand_eye_calibration) StderrLine: {'line': b'   24 |     PointCloud<pcl::PointXYZ>::Ptr cloud(new \x1b[01;36m\x1b[KPointCloud\x1b[m\x1b[K);\n'}
+[3.533026] (hand_eye_calibration) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.533072] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44\x1b[m\x1b[K,\n'}
+[3.533117] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4\x1b[m\x1b[K:\n'}
+[3.533166] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:71:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class PointT> PointCloud(pcl::PointCloud<PointT>)-> pcl::PointCloud<PointT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.533214] (hand_eye_calibration) StderrLine: {'line': b'   71 |   template <typename PointT> class \x1b[01;36m\x1b[KPointCloud\x1b[m\x1b[K;\n'}
+[3.533259] (hand_eye_calibration) StderrLine: {'line': b'      |                                    \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.533304] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:71:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.533349] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:24:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 0 provided\n'}
+[3.533395] (hand_eye_calibration) StderrLine: {'line': b'   24 |     PointCloud<pcl::PointXYZ>::Ptr cloud(new \x1b[01;36m\x1b[KPointCloud\x1b[m\x1b[K);\n'}
+[3.533441] (hand_eye_calibration) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.539664] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZ>::Ptr alignPointClouds(pcl::PointCloud<pcl::PointXYZ>::Ptr, pcl::PointCloud<pcl::PointXYZ>::Ptr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.539757] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:70:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass template argument deduction failed:\n'}
+[3.539823] (hand_eye_calibration) StderrLine: {'line': b'   70 |     PointCloud<pcl::PointXYZ>::Ptr aligned(new \x1b[01;31m\x1b[KPointCloud\x1b[m\x1b[K);\n'}
+[3.539874] (hand_eye_calibration) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.539933] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:70:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KPointCloud()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.539993] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44\x1b[m\x1b[K,\n'}
+[3.540041] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4\x1b[m\x1b[K:\n'}
+[3.540088] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:201:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class PointT> PointCloud(uint32_t, uint32_t, const PointT&)-> pcl::PointCloud<PointT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.540140] (hand_eye_calibration) StderrLine: {'line': b'  201 |       \x1b[01;36m\x1b[KPointCloud\x1b[m\x1b[K (std::uint32_t width_, std::uint32_t height_, const PointT& value_ = PointT ())\n'}
+[3.540187] (hand_eye_calibration) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.540234] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:201:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.540281] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:70:48:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 0 provided\n'}
+[3.540328] (hand_eye_calibration) StderrLine: {'line': b'   70 |     PointCloud<pcl::PointXYZ>::Ptr aligned(new \x1b[01;36m\x1b[KPointCloud\x1b[m\x1b[K);\n'}
+[3.540373] (hand_eye_calibration) StderrLine: {'line': b'      |                                                \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.540416] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44\x1b[m\x1b[K,\n'}
+[3.540459] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4\x1b[m\x1b[K:\n'}
+[3.540502] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:185:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class PointT> PointCloud(const pcl::PointCloud<PointT>&, const Indices&)-> pcl::PointCloud<PointT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.540546] (hand_eye_calibration) StderrLine: {'line': b'  185 |       \x1b[01;36m\x1b[KPointCloud\x1b[m\x1b[K (const PointCloud<PointT> &pc,\n'}
+[3.540589] (hand_eye_calibration) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.540631] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:185:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.540680] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:70:48:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[3.540724] (hand_eye_calibration) StderrLine: {'line': b'   70 |     PointCloud<pcl::PointXYZ>::Ptr aligned(new \x1b[01;36m\x1b[KPointCloud\x1b[m\x1b[K);\n'}
+[3.540767] (hand_eye_calibration) StderrLine: {'line': b'      |                                                \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.540810] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44\x1b[m\x1b[K,\n'}
+[3.540854] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4\x1b[m\x1b[K:\n'}
+[3.540897] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:179:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class PointT> PointCloud()-> pcl::PointCloud<PointT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.540941] (hand_eye_calibration) StderrLine: {'line': b'  179 |       \x1b[01;36m\x1b[KPointCloud\x1b[m\x1b[K () = default;\n'}
+[3.540997] (hand_eye_calibration) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.541045] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:179:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.541093] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:70:48:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[KPointT\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.541142] (hand_eye_calibration) StderrLine: {'line': b'   70 |     PointCloud<pcl::PointXYZ>::Ptr aligned(new \x1b[01;36m\x1b[KPointCloud\x1b[m\x1b[K);\n'}
+[3.541184] (hand_eye_calibration) StderrLine: {'line': b'      |                                                \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.541227] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44\x1b[m\x1b[K,\n'}
+[3.541270] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4\x1b[m\x1b[K:\n'}
+[3.541317] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:71:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class PointT> PointCloud(pcl::PointCloud<PointT>)-> pcl::PointCloud<PointT>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.541362] (hand_eye_calibration) StderrLine: {'line': b'   71 |   template <typename PointT> class \x1b[01;36m\x1b[KPointCloud\x1b[m\x1b[K;\n'}
+[3.541406] (hand_eye_calibration) StderrLine: {'line': b'      |                                    \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.541451] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:71:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.541495] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:70:48:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 0 provided\n'}
+[3.541540] (hand_eye_calibration) StderrLine: {'line': b'   70 |     PointCloud<pcl::PointXYZ>::Ptr aligned(new \x1b[01;36m\x1b[KPointCloud\x1b[m\x1b[K);\n'}
+[3.541584] (hand_eye_calibration) StderrLine: {'line': b'      |                                                \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.633375] (-) TimerEvent: {}
+[3.733651] (-) TimerEvent: {}
+[3.833978] (-) TimerEvent: {}
+[3.934351] (-) TimerEvent: {}
+[4.034593] (-) TimerEvent: {}
+[4.134861] (-) TimerEvent: {}
+[4.235203] (-) TimerEvent: {}
+[4.336433] (-) TimerEvent: {}
+[4.436966] (-) TimerEvent: {}
+[4.537625] (-) TimerEvent: {}
+[4.642854] (-) TimerEvent: {}
+[4.743118] (-) TimerEvent: {}
+[4.846372] (-) TimerEvent: {}
+[4.946622] (-) TimerEvent: {}
+[5.047481] (-) TimerEvent: {}
+[5.149276] (-) TimerEvent: {}
+[5.249496] (-) TimerEvent: {}
+[5.350155] (-) TimerEvent: {}
+[5.451528] (-) TimerEvent: {}
+[5.551809] (-) TimerEvent: {}
+[5.652482] (-) TimerEvent: {}
+[5.755052] (-) TimerEvent: {}
+[5.858485] (-) TimerEvent: {}
+[5.958703] (-) TimerEvent: {}
+[6.058938] (-) TimerEvent: {}
+[6.159189] (-) TimerEvent: {}
+[6.234190] (hand_eye_calibration) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/scan_processing_node.dir/build.make:76: CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o] Error 1\n'}
+[6.238166] (hand_eye_calibration) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/scan_processing_node.dir/all] Error 2\n'}
+[6.239565] (hand_eye_calibration) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.259460] (-) TimerEvent: {}
+[6.289163] (hand_eye_calibration) CommandEnded: {'returncode': 2}
+[6.339545] (hand_eye_calibration) JobEnded: {'identifier': 'hand_eye_calibration', 'rc': 2}
+[6.353378] (-) EventReactorShutdown: {}

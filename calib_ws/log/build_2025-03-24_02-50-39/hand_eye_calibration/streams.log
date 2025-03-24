@@ -1,0 +1,99 @@
+[0.007s] Invoking command in '/home/parallels/calib_ws/build/hand_eye_calibration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/calib_ws/build/hand_eye_calibration -- -j2 -l2
+[0.076s] [35m[1mConsolidate compiler generated dependencies of target scan_processing_node[0m
+[0.152s] [ 25%] [32mBuilding CXX object CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o[0m
+[0.156s] [ 75%] Built target calibration_node
+[3.576s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:24:17:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[KloadPointCloud[m[K’
+[3.577s]    24 | PointCloud::Ptr [01;31m[KloadPointCloud[m[K(const std::string &filename) {
+[3.577s]       |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.577s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:46:31:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+[3.578s]    46 | void applySOR(PointCloud::Ptr [01;31m[K&[m[Kcloud) {
+[3.578s]       |                               [01;31m[K^[m[K
+[3.578s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:46:30:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[3.578s]    46 | void applySOR[34m[K([m[KPointCloud::Ptr[01;31m[K [m[K[32m[K&[m[Kcloud) {
+[3.578s]       |              [34m[K~[m[K               [01;31m[K^[m[K[32m[K~[m[K
+[3.578s]       |                              [32m[K)[m[K
+[3.578s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:46:32:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kcloud[m[K’
+[3.578s]    46 | void applySOR(PointCloud::Ptr &[01;31m[Kcloud[m[K) {
+[3.578s]       |                                [01;31m[K^~~~~[m[K
+[3.578s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:66:17:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[KalignPointClouds[m[K’
+[3.578s]    66 | PointCloud::Ptr [01;31m[KalignPointClouds[m[K(PointCloud::Ptr source, PointCloud::Ptr target) {
+[3.578s]       |                 [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[3.578s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:84:72:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kcloud[m[K’
+[3.579s]    84 | void savePointCloud(const std::string &filename, const PointCloud::Ptr [01;31m[Kcloud[m[K) {
+[3.579s]       |                                                                        [01;31m[K^~~~~[m[K
+[3.579s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:84:71:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kcloud[m[K’
+[3.579s]    84 | void savePointCloud[34m[K([m[Kconst std::string &filename, const PointCloud::Ptr[01;31m[K [m[K[32m[Kcloud[m[K) {
+[3.579s]       |                    [34m[K~[m[K                                                  [01;31m[K^[m[K[32m[K~~~~~[m[K
+[3.579s]       |                                                                       [32m[K)[m[K
+[3.579s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:84:72:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kcloud[m[K’
+[3.579s]    84 | void savePointCloud(const std::string &filename, const PointCloud::Ptr [01;31m[Kcloud[m[K) {
+[3.579s]       |                                                                        [01;31m[K^~~~~[m[K
+[3.579s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:94:42:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kcloud[m[K’
+[3.579s]    94 | void visualizePointCloud(PointCloud::Ptr [01;31m[Kcloud[m[K) {
+[3.579s]       |                                          [01;31m[K^~~~~[m[K
+[3.579s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:94:41:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kcloud[m[K’
+[3.579s]    94 | void visualizePointCloud[34m[K([m[KPointCloud::Ptr[01;31m[K [m[K[32m[Kcloud[m[K) {
+[3.579s]       |                         [34m[K~[m[K               [01;31m[K^[m[K[32m[K~~~~~[m[K
+[3.579s]       |                                         [32m[K)[m[K
+[3.580s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:94:42:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kcloud[m[K’
+[3.580s]    94 | void visualizePointCloud(PointCloud::Ptr [01;31m[Kcloud[m[K) {
+[3.580s]       |                                          [01;31m[K^~~~~[m[K
+[3.580s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:133:5:[m[K [01;31m[Kerror: [m[Kinvalid use of template-name ‘[01m[Kpcl::PointCloud[m[K’ without an argument list
+[3.580s]   133 |     [01;31m[KPointCloud[m[K::Ptr cloud1_;
+[3.580s]       |     [01;31m[K^~~~~~~~~~[m[K
+[3.580s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:133:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[3.580s]   133 |     PointCloud::[01;31m[KPtr[m[K cloud1_;
+[3.580s]       |                 [01;31m[K^~~[m[K
+[3.580s]       |                    [32m[K;[m[K
+[3.580s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:133:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud1_[m[K’ does not name a type
+[3.580s]   133 |     PointCloud::Ptr [01;31m[Kcloud1_[m[K;
+[3.580s]       |                     [01;31m[K^~~~~~~[m[K
+[3.580s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:134:5:[m[K [01;31m[Kerror: [m[Kinvalid use of template-name ‘[01m[Kpcl::PointCloud[m[K’ without an argument list
+[3.580s]   134 |     [01;31m[KPointCloud[m[K::Ptr cloud2_;
+[3.580s]       |     [01;31m[K^~~~~~~~~~[m[K
+[3.580s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:134:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[3.580s]   134 |     PointCloud::[01;31m[KPtr[m[K cloud2_;
+[3.580s]       |                 [01;31m[K^~~[m[K
+[3.580s]       |                    [32m[K;[m[K
+[3.581s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:134:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud2_[m[K’ does not name a type
+[3.581s]   134 |     PointCloud::Ptr [01;31m[Kcloud2_[m[K;
+[3.581s]       |                     [01;31m[K^~~~~~~[m[K
+[3.581s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:135:5:[m[K [01;31m[Kerror: [m[Kinvalid use of template-name ‘[01m[Kpcl::PointCloud[m[K’ without an argument list
+[3.581s]   135 |     [01;31m[KPointCloud[m[K::Ptr aligned_cloud_;
+[3.581s]       |     [01;31m[K^~~~~~~~~~[m[K
+[3.581s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:135:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[3.581s]   135 |     PointCloud::[01;31m[KPtr[m[K aligned_cloud_;
+[3.581s]       |                 [01;31m[K^~~[m[K
+[3.581s]       |                    [32m[K;[m[K
+[3.585s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:135:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kaligned_cloud_[m[K’ does not name a type
+[3.585s]   135 |     PointCloud::Ptr [01;31m[Kaligned_cloud_[m[K;
+[3.585s]       |                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.595s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:[m[K In constructor ‘[01m[KPointCloudProcessor::PointCloudProcessor()[m[K’:
+[3.595s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:108:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud1_[m[K’ was not declared in this scope
+[3.595s]   108 |         [01;31m[Kcloud1_[m[K = loadPointCloud("scan1.dat");
+[3.595s]       |         [01;31m[K^~~~~~~[m[K
+[3.608s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:108:19:[m[K [01;31m[Kerror: [m[K‘[01m[KloadPointCloud[m[K’ was not declared in this scope
+[3.608s]   108 |         cloud1_ = [01;31m[KloadPointCloud[m[K("scan1.dat");
+[3.608s]       |                   [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.616s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:109:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud2_[m[K’ was not declared in this scope
+[3.616s]   109 |         [01;31m[Kcloud2_[m[K = loadPointCloud("scan2.dat");
+[3.616s]       |         [01;31m[K^~~~~~~[m[K
+[3.624s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:117:9:[m[K [01;31m[Kerror: [m[K‘[01m[KapplySOR[m[K’ was not declared in this scope
+[3.624s]   117 |         [01;31m[KapplySOR[m[K(cloud1_);
+[3.624s]       |         [01;31m[K^~~~~~~~[m[K
+[3.636s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:123:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kaligned_cloud_[m[K’ was not declared in this scope
+[3.636s]   123 |         [01;31m[Kaligned_cloud_[m[K = alignPointClouds(cloud2_, cloud1_);
+[3.636s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.651s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:123:26:[m[K [01;31m[Kerror: [m[K‘[01m[KalignPointClouds[m[K’ was not declared in this scope
+[3.651s]   123 |         aligned_cloud_ = [01;31m[KalignPointClouds[m[K(cloud2_, cloud1_);
+[3.651s]       |                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[3.664s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:126:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsavePointCloud[m[K’ was not declared in this scope
+[3.664s]   126 |         [01;31m[KsavePointCloud[m[K("aligned_scan.csv", aligned_cloud_);
+[3.665s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.683s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:129:9:[m[K [01;31m[Kerror: [m[K‘[01m[KvisualizePointCloud[m[K’ was not declared in this scope
+[3.683s]   129 |         [01;31m[KvisualizePointCloud[m[K(aligned_cloud_);
+[3.683s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[4.659s] gmake[2]: *** [CMakeFiles/scan_processing_node.dir/build.make:76: CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o] Error 1
+[4.663s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/scan_processing_node.dir/all] Error 2
+[4.665s] gmake: *** [Makefile:146: all] Error 2
+[4.706s] Invoked command in '/home/parallels/calib_ws/build/hand_eye_calibration' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/calib_ws/build/hand_eye_calibration -- -j2 -l2

@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target scan_processing_node[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o[0m
+[ 75%] Built target calibration_node
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:[m[K In constructor ‘[01m[KPointCloudProcessor::PointCloudProcessor()[m[K’:
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:143:37:[m[K [01;31m[Kerror: [m[Ktoo many arguments to function ‘[01m[Kvoid visualizeMultiplePointClouds(std::vector<std::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> > >)[m[K’
+  143 |         [01;31m[KvisualizeMultiplePointClouds(misaligned_clouds, "misaligned_clouds")[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:91:6:[m[K [01;36m[Knote: [m[Kdeclared here
+   91 | void [01;36m[KvisualizeMultiplePointClouds[m[K(vector<PointCloud<PointXYZRGB>::Ptr> clouds) {
+      |      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:153:34:[m[K [01;31m[Kerror: [m[Ktoo many arguments to function ‘[01m[Kvoid visualizeSinglePointCloud(pcl::PointCloud<pcl::PointXYZRGB>::Ptr)[m[K’
+  153 |         [01;31m[KvisualizeSinglePointCloud(aligned_cloud, "aligned_cloud")[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:105:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  105 | void [01;36m[KvisualizeSinglePointCloud[m[K(PointCloud<PointXYZRGB>::Ptr cloud) {
+      |      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/scan_processing_node.dir/build.make:76: CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/scan_processing_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

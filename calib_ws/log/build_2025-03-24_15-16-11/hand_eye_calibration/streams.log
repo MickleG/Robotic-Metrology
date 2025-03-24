@@ -1,0 +1,12 @@
+[0.006s] Invoking command in '/home/parallels/calib_ws/build/hand_eye_calibration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/calib_ws/build/hand_eye_calibration -- -j2 -l2
+[0.055s] [35m[1mConsolidate compiler generated dependencies of target calibration_node[0m
+[0.127s] [ 25%] [32mBuilding CXX object CMakeFiles/calibration_node.dir/src/calibration_node.cpp.o[0m
+[0.127s] [ 75%] Built target scan_processing_node
+[3.671s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:[m[K In member function ‘[01m[KEigen::Matrix4d CalibrationNode::compute_T_cam_ee(std::vector<Eigen::Matrix<double, 4, 4> >, std::vector<std::vector<Eigen::Matrix<double, 4, 1> > >&, std::vector<std::vector<Eigen::Matrix<double, 4, 1> > >&)[m[K’:
+[3.671s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:357:33:[m[K [01;31m[Kerror: [m[K‘[01m[KnumSets[m[K’ was not declared in this scope
+[3.671s]   357 |         T_ee_cam_accumulator /= [01;31m[KnumSets[m[K;
+[3.671s]       |                                 [01;31m[K^~~~~~~[m[K
+[6.168s] gmake[2]: *** [CMakeFiles/calibration_node.dir/build.make:76: CMakeFiles/calibration_node.dir/src/calibration_node.cpp.o] Error 1
+[6.170s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/calibration_node.dir/all] Error 2
+[6.171s] gmake: *** [Makefile:146: all] Error 2
+[6.232s] Invoked command in '/home/parallels/calib_ws/build/hand_eye_calibration' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/calib_ws/build/hand_eye_calibration -- -j2 -l2

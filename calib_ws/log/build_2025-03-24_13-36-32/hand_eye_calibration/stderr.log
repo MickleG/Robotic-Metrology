@@ -1,0 +1,60 @@
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:[m[K In function ‘[01m[Kvoid visualizePointCloud(pcl::PointCloud<pcl::PointXYZRGB>::Ptr, pcl::PointCloud<pcl::PointXYZRGB>::Ptr, std::string, pcl::visualization::PCLVisualizer)[m[K’:
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:92:38:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst pcl::visualization::PCLVisualizer[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   92 |     [01;31m[Kviewer.addPointCloud<PointXYZRGB>(cloud, name)[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:18[m[K:
+[01m[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:678:9:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kbool pcl::visualization::PCLVisualizer::addPointCloud(const typename pcl::PointCloud<PointT>::ConstPtr&, const string&, int) [with PointT = pcl::PointXYZRGB; typename pcl::PointCloud<PointT>::ConstPtr = std::shared_ptr<const pcl::PointCloud<pcl::PointXYZRGB> >; std::string = std::__cxx11::basic_string<char>][m[K’
+  678 |         [01;36m[KaddPointCloud[m[K (const typename pcl::PointCloud<PointT>::ConstPtr &cloud,
+      |         [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:93:38:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst pcl::visualization::PCLVisualizer[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   93 |     [01;31m[Kviewer.addPointCloud<PointXYZRGB>(cloud2, name)[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:2369[m[K,
+                 from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:18[m[K:
+[01m[K/usr/include/pcl-1.12/pcl/visualization/impl/pcl_visualizer.hpp:77:1:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kbool pcl::visualization::PCLVisualizer::addPointCloud(const typename pcl::PointCloud<PointT>::ConstPtr&, const string&, int) [with PointT = pcl::PointXYZRGB; typename pcl::PointCloud<PointT>::ConstPtr = std::shared_ptr<const pcl::PointCloud<pcl::PointXYZRGB> >; std::string = std::__cxx11::basic_string<char>][m[K’
+   77 | [01;36m[Kpcl[m[K::visualization::PCLVisualizer::addPointCloud (
+      | [01;36m[K^~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:94:44:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst pcl::visualization::PCLVisualizer[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   94 |     [01;31m[Kviewer.setPointCloudRenderingProperties(pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 2, name)[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:18[m[K:
+[01m[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:1177:9:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kbool pcl::visualization::PCLVisualizer::setPointCloudRenderingProperties(int, double, const string&, int)[m[K’
+ 1177 |         [01;36m[KsetPointCloudRenderingProperties[m[K (int property, double value,
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:96:16:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst pcl::visualization::PCLVisualizer[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   96 |     [01;31m[Kviewer.spin()[m[K;
+      |     [01;31m[K~~~~~~~~~~~^~[m[K
+In file included from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:18[m[K:
+[01m[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:285:9:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kvoid pcl::visualization::PCLVisualizer::spin()[m[K’
+  285 |         [01;36m[Kspin[m[K ();
+      |         [01;36m[K^~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:[m[K In constructor ‘[01m[KPointCloudProcessor::PointCloudProcessor()[m[K’:
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:125:103:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kpcl::visualization::PCLVisualizer::PCLVisualizer(pcl::visualization::PCLVisualizer*)[m[K’
+  125 |         pcl::visualization::PCLVisualizer viewer(new pcl::visualization::PCLVisualizer("Cloud Viewer")[01;31m[K)[m[K;
+      |                                                                                                       [01;31m[K^[m[K
+In file included from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:18[m[K:
+[01m[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:139:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kpcl::visualization::PCLVisualizer::PCLVisualizer(int&, char**, vtkSmartPointer<vtkRenderer>, vtkSmartPointer<vtkRenderWindow>, const string&, pcl::visualization::PCLVisualizerInteractorStyle*, bool)[m[K’
+  139 |         [01;36m[KPCLVisualizer[m[K (int &argc, char **argv, vtkSmartPointer<vtkRenderer> ren, vtkSmartPointer<vtkRenderWindow> wind, const std::string &name = "",
+      |         [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:139:9:[m[K [01;36m[Knote: [m[K  candidate expects 7 arguments, 1 provided
+[01m[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:129:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kpcl::visualization::PCLVisualizer::PCLVisualizer(vtkSmartPointer<vtkRenderer>, vtkSmartPointer<vtkRenderWindow>, const string&, bool)[m[K’
+  129 |         [01;36m[KPCLVisualizer[m[K (vtkSmartPointer<vtkRenderer> ren, vtkSmartPointer<vtkRenderWindow> wind, const std::string &name = "", const bool create_interactor = true);
+      |         [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:129:9:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[01m[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:121:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kpcl::visualization::PCLVisualizer::PCLVisualizer(int&, char**, const string&, pcl::visualization::PCLVisualizerInteractorStyle*, bool)[m[K’
+  121 |         [01;36m[KPCLVisualizer[m[K (int &argc, char **argv, const std::string &name = "",
+      |         [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:121:9:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 1 provided
+[01m[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:111:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kpcl::visualization::PCLVisualizer::PCLVisualizer(const string&, bool)[m[K’
+  111 |         [01;36m[KPCLVisualizer[m[K (const std::string &name = "", const bool create_interactor = true);
+      |         [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:111:43:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kpcl::visualization::PCLVisualizer*[m[K’ to ‘[01m[Kconst string&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’}
+  111 |         PCLVisualizer ([01;36m[Kconst std::string &name = ""[m[K, const bool create_interactor = true);
+      |                        [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:93:23:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kpcl::visualization::PCLVisualizer::PCLVisualizer(const pcl::visualization::PCLVisualizer&)[m[K’
+   93 |     class PCL_EXPORTS [01;36m[KPCLVisualizer[m[K
+      |                       [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:93:23:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kpcl::visualization::PCLVisualizer*[m[K’ to ‘[01m[Kconst pcl::visualization::PCLVisualizer&[m[K’
+gmake[2]: *** [CMakeFiles/scan_processing_node.dir/build.make:76: CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/scan_processing_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

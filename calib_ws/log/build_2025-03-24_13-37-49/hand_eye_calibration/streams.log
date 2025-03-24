@@ -1,0 +1,38 @@
+[0.007s] Invoking command in '/home/parallels/calib_ws/build/hand_eye_calibration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/calib_ws/build/hand_eye_calibration -- -j2 -l2
+[0.074s] [35m[1mConsolidate compiler generated dependencies of target scan_processing_node[0m
+[0.142s] [ 25%] [32mBuilding CXX object CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o[0m
+[0.142s] [ 75%] Built target calibration_node
+[3.539s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:[m[K In function ‘[01m[Kvoid visualizePointCloud(pcl::PointCloud<pcl::PointXYZRGB>::Ptr, pcl::PointCloud<pcl::PointXYZRGB>::Ptr, std::string, pcl::visualization::PCLVisualizer)[m[K’:
+[3.540s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:92:38:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst pcl::visualization::PCLVisualizer[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.540s]    92 |     [01;31m[Kviewer.addPointCloud<PointXYZRGB>(cloud, name)[m[K;
+[3.540s]       |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[3.540s] In file included from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:18[m[K:
+[3.540s] [01m[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:678:9:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kbool pcl::visualization::PCLVisualizer::addPointCloud(const typename pcl::PointCloud<PointT>::ConstPtr&, const string&, int) [with PointT = pcl::PointXYZRGB; typename pcl::PointCloud<PointT>::ConstPtr = std::shared_ptr<const pcl::PointCloud<pcl::PointXYZRGB> >; std::string = std::__cxx11::basic_string<char>][m[K’
+[3.541s]   678 |         [01;36m[KaddPointCloud[m[K (const typename pcl::PointCloud<PointT>::ConstPtr &cloud,
+[3.541s]       |         [01;36m[K^~~~~~~~~~~~~[m[K
+[3.541s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:93:38:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst pcl::visualization::PCLVisualizer[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.541s]    93 |     [01;31m[Kviewer.addPointCloud<PointXYZRGB>(cloud2, name)[m[K;
+[3.541s]       |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[3.541s] In file included from [01m[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:2369[m[K,
+[3.541s]                  from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:18[m[K:
+[3.541s] [01m[K/usr/include/pcl-1.12/pcl/visualization/impl/pcl_visualizer.hpp:77:1:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kbool pcl::visualization::PCLVisualizer::addPointCloud(const typename pcl::PointCloud<PointT>::ConstPtr&, const string&, int) [with PointT = pcl::PointXYZRGB; typename pcl::PointCloud<PointT>::ConstPtr = std::shared_ptr<const pcl::PointCloud<pcl::PointXYZRGB> >; std::string = std::__cxx11::basic_string<char>][m[K’
+[3.541s]    77 | [01;36m[Kpcl[m[K::visualization::PCLVisualizer::addPointCloud (
+[3.541s]       | [01;36m[K^~~[m[K
+[3.541s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:94:44:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst pcl::visualization::PCLVisualizer[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.541s]    94 |     [01;31m[Kviewer.setPointCloudRenderingProperties(pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 2, name)[m[K;
+[3.541s]       |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.541s] In file included from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:18[m[K:
+[3.542s] [01m[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:1177:9:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kbool pcl::visualization::PCLVisualizer::setPointCloudRenderingProperties(int, double, const string&, int)[m[K’
+[3.542s]  1177 |         [01;36m[KsetPointCloudRenderingProperties[m[K (int property, double value,
+[3.542s]       |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.542s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:96:16:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst pcl::visualization::PCLVisualizer[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.542s]    96 |     [01;31m[Kviewer.spin()[m[K;
+[3.542s]       |     [01;31m[K~~~~~~~~~~~^~[m[K
+[3.542s] In file included from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:18[m[K:
+[3.542s] [01m[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:285:9:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kvoid pcl::visualization::PCLVisualizer::spin()[m[K’
+[3.542s]   285 |         [01;36m[Kspin[m[K ();
+[3.542s]       |         [01;36m[K^~~~[m[K
+[5.974s] gmake[2]: *** [CMakeFiles/scan_processing_node.dir/build.make:76: CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o] Error 1
+[5.978s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/scan_processing_node.dir/all] Error 2
+[5.979s] gmake: *** [Makefile:146: all] Error 2
+[6.034s] Invoked command in '/home/parallels/calib_ws/build/hand_eye_calibration' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/calib_ws/build/hand_eye_calibration -- -j2 -l2

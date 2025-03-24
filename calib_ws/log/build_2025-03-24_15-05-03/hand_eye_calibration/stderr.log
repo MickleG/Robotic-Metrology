@@ -1,0 +1,27 @@
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:[m[K In member function ‘[01m[Kvoid CalibrationNode::buildCorrespondenceMatrix(Eigen::MatrixXd&)[m[K’:
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:286:29:[m[K [01;31m[Kerror: [m[K‘[01m[KnumPoints[m[K’ was not declared in this scope; did you mean ‘[01m[KnumPoses[m[K’?
+  286 |         for (int i = 0; i < [01;31m[KnumPoints[m[K; i++) {
+      |                             [01;31m[K^~~~~~~~~[m[K
+      |                             [32m[KnumPoses[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:289:26:[m[K [01;31m[Kerror: [m[K‘[01m[KX_norm[m[K’ was not declared in this scope
+  289 |             Vector4d x = [01;31m[KX_norm[m[K[i];         // Scanned point in normalized camera frame
+      |                          [01;31m[K^~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:290:32:[m[K [01;31m[Kerror: [m[K‘[01m[KX_prime_norm[m[K’ was not declared in this scope
+  290 |             Vector4d x_prime = [01;31m[KX_prime_norm[m[K[i]; // Known object point in normalized world frame
+      |                                [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:[m[K In member function ‘[01m[Kvoid CalibrationNode::calculateTCamEE(Eigen::Matrix4d&, Eigen::VectorXd&, Eigen::Matrix4d&)[m[K’:
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:313:45:[m[K [01;31m[Kerror: [m[K‘[01m[KT[m[K’ was not declared in this scope; did you mean ‘[01m[Kpcl::deprecated::T[m[K’?
+  313 |         T_cam_ee = enforceAffineConstraints([01;31m[KT[m[K);
+      |                                             [01;31m[K^[m[K
+      |                                             [32m[Kpcl::deprecated::T[m[K
+In file included from [01m[K/usr/include/pcl-1.12/pcl/memory.h:46[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/pcl_base.h:46[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/correspondence.h:45[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:42[m[K,
+                 from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:7[m[K:
+[01m[K/usr/include/pcl-1.12/pcl/type_traits.h:56:12:[m[K [01;36m[Knote: [m[K‘[01m[Kpcl::deprecated::T[m[K’ declared here
+   56 |     struct [01;36m[KT[m[K {};
+      |            [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/calibration_node.dir/build.make:76: CMakeFiles/calibration_node.dir/src/calibration_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/calibration_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

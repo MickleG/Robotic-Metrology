@@ -1,0 +1,140 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o[0m
+[ 75%] Built target calibration_node
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:24:1:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[KPointCloud[m[K’ is ambiguous
+   24 | [01;31m[KPointCloud[m[K::Ptr loadPointCloud(const std::string &filename) {
+      | [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4[m[K:
+[01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:71:36:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Ktemplate<class PointT> class pcl::PointCloud[m[K’
+   71 |   template <typename PointT> class [01;36m[KPointCloud[m[K;
+      |                                    [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:21:40:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktypedef class pcl::PointCloud<pcl::PointXYZ> PointCloud[m[K’
+   21 | typedef pcl::PointCloud<pcl::PointXYZ> [01;36m[KPointCloud[m[K;
+      |                                        [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:46:6:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[KapplySOR[m[K’ declared void
+   46 | void [01;31m[KapplySOR[m[K(PointCloud::Ptr &cloud) {
+      |      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:46:15:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[KPointCloud[m[K’ is ambiguous
+   46 | void applySOR([01;31m[KPointCloud[m[K::Ptr &cloud) {
+      |               [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4[m[K:
+[01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:71:36:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Ktemplate<class PointT> class pcl::PointCloud[m[K’
+   71 |   template <typename PointT> class [01;36m[KPointCloud[m[K;
+      |                                    [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:21:40:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktypedef class pcl::PointCloud<pcl::PointXYZ> PointCloud[m[K’
+   21 | typedef pcl::PointCloud<pcl::PointXYZ> [01;36m[KPointCloud[m[K;
+      |                                        [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:46:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud[m[K’ was not declared in this scope
+   46 | void applySOR(PointCloud::Ptr &[01;31m[Kcloud[m[K) {
+      |                                [01;31m[K^~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:66:1:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[KPointCloud[m[K’ is ambiguous
+   66 | [01;31m[KPointCloud[m[K::Ptr alignPointClouds(PointCloud::Ptr source, PointCloud::Ptr target) {
+      | [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4[m[K:
+[01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:71:36:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Ktemplate<class PointT> class pcl::PointCloud[m[K’
+   71 |   template <typename PointT> class [01;36m[KPointCloud[m[K;
+      |                                    [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:21:40:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktypedef class pcl::PointCloud<pcl::PointXYZ> PointCloud[m[K’
+   21 | typedef pcl::PointCloud<pcl::PointXYZ> [01;36m[KPointCloud[m[K;
+      |                                        [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:84:56:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[KPointCloud[m[K’ is ambiguous
+   84 | void savePointCloud(const std::string &filename, const [01;31m[KPointCloud[m[K::Ptr cloud) {
+      |                                                        [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4[m[K:
+[01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:71:36:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Ktemplate<class PointT> class pcl::PointCloud[m[K’
+   71 |   template <typename PointT> class [01;36m[KPointCloud[m[K;
+      |                                    [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:21:40:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktypedef class pcl::PointCloud<pcl::PointXYZ> PointCloud[m[K’
+   21 | typedef pcl::PointCloud<pcl::PointXYZ> [01;36m[KPointCloud[m[K;
+      |                                        [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:84:72:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kcloud[m[K’
+   84 | void savePointCloud(const std::string &filename, const PointCloud::Ptr [01;31m[Kcloud[m[K) {
+      |                                                                        [01;31m[K^~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:84:71:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kcloud[m[K’
+   84 | void savePointCloud[34m[K([m[Kconst std::string &filename, const PointCloud::Ptr[01;31m[K [m[K[32m[Kcloud[m[K) {
+      |                    [34m[K~[m[K                                                  [01;31m[K^[m[K[32m[K~~~~~[m[K
+      |                                                                       [32m[K)[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:84:72:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kcloud[m[K’
+   84 | void savePointCloud(const std::string &filename, const PointCloud::Ptr [01;31m[Kcloud[m[K) {
+      |                                                                        [01;31m[K^~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:94:6:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[KvisualizePointCloud[m[K’ declared void
+   94 | void [01;31m[KvisualizePointCloud[m[K(PointCloud::Ptr cloud) {
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:94:26:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[KPointCloud[m[K’ is ambiguous
+   94 | void visualizePointCloud([01;31m[KPointCloud[m[K::Ptr cloud) {
+      |                          [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4[m[K:
+[01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:71:36:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Ktemplate<class PointT> class pcl::PointCloud[m[K’
+   71 |   template <typename PointT> class [01;36m[KPointCloud[m[K;
+      |                                    [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:21:40:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktypedef class pcl::PointCloud<pcl::PointXYZ> PointCloud[m[K’
+   21 | typedef pcl::PointCloud<pcl::PointXYZ> [01;36m[KPointCloud[m[K;
+      |                                        [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:133:5:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[KPointCloud[m[K’ is ambiguous
+  133 |     [01;31m[KPointCloud[m[K::Ptr cloud1_;
+      |     [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4[m[K:
+[01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:71:36:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Ktemplate<class PointT> class pcl::PointCloud[m[K’
+   71 |   template <typename PointT> class [01;36m[KPointCloud[m[K;
+      |                                    [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:21:40:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktypedef class pcl::PointCloud<pcl::PointXYZ> PointCloud[m[K’
+   21 | typedef pcl::PointCloud<pcl::PointXYZ> [01;36m[KPointCloud[m[K;
+      |                                        [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:134:5:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[KPointCloud[m[K’ is ambiguous
+  134 |     [01;31m[KPointCloud[m[K::Ptr cloud2_;
+      |     [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4[m[K:
+[01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:71:36:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Ktemplate<class PointT> class pcl::PointCloud[m[K’
+   71 |   template <typename PointT> class [01;36m[KPointCloud[m[K;
+      |                                    [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:21:40:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktypedef class pcl::PointCloud<pcl::PointXYZ> PointCloud[m[K’
+   21 | typedef pcl::PointCloud<pcl::PointXYZ> [01;36m[KPointCloud[m[K;
+      |                                        [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:135:5:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[KPointCloud[m[K’ is ambiguous
+  135 |     [01;31m[KPointCloud[m[K::Ptr aligned_cloud_;
+      |     [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:44[m[K,
+                 from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:4[m[K:
+[01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:71:36:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Ktemplate<class PointT> class pcl::PointCloud[m[K’
+   71 |   template <typename PointT> class [01;36m[KPointCloud[m[K;
+      |                                    [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:21:40:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktypedef class pcl::PointCloud<pcl::PointXYZ> PointCloud[m[K’
+   21 | typedef pcl::PointCloud<pcl::PointXYZ> [01;36m[KPointCloud[m[K;
+      |                                        [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:[m[K In constructor ‘[01m[KPointCloudProcessor::PointCloudProcessor()[m[K’:
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:108:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud1_[m[K’ was not declared in this scope
+  108 |         [01;31m[Kcloud1_[m[K = loadPointCloud("scan1.dat");
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:108:19:[m[K [01;31m[Kerror: [m[K‘[01m[KloadPointCloud[m[K’ was not declared in this scope; did you mean ‘[01m[KPointCloud[m[K’?
+  108 |         cloud1_ = [01;31m[KloadPointCloud[m[K("scan1.dat");
+      |                   [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                   [32m[KPointCloud[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:109:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud2_[m[K’ was not declared in this scope
+  109 |         [01;31m[Kcloud2_[m[K = loadPointCloud("scan2.dat");
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:117:9:[m[K [01;31m[Kerror: [m[K‘[01m[KapplySOR[m[K’ was not declared in this scope
+  117 |         [01;31m[KapplySOR[m[K(cloud1_);
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:123:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kaligned_cloud_[m[K’ was not declared in this scope
+  123 |         [01;31m[Kaligned_cloud_[m[K = alignPointClouds(cloud2_, cloud1_);
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:123:26:[m[K [01;31m[Kerror: [m[K‘[01m[KalignPointClouds[m[K’ was not declared in this scope; did you mean ‘[01m[KPointCloud[m[K’?
+  123 |         aligned_cloud_ = [01;31m[KalignPointClouds[m[K(cloud2_, cloud1_);
+      |                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                          [32m[KPointCloud[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:126:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsavePointCloud[m[K’ was not declared in this scope; did you mean ‘[01m[KPointCloud[m[K’?
+  126 |         [01;31m[KsavePointCloud[m[K("aligned_scan.csv", aligned_cloud_);
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+      |         [32m[KPointCloud[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/scan_processing_node.cpp:129:9:[m[K [01;31m[Kerror: [m[K‘[01m[KvisualizePointCloud[m[K’ was not declared in this scope
+  129 |         [01;31m[KvisualizePointCloud[m[K(aligned_cloud_);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/scan_processing_node.dir/build.make:76: CMakeFiles/scan_processing_node.dir/src/scan_processing_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/scan_processing_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

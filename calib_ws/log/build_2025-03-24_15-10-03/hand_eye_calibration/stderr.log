@@ -1,0 +1,16 @@
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:[m[K In member function ‘[01m[Kvoid CalibrationNode::calculateTCamEE(Eigen::Matrix4d&, Eigen::VectorXd&, Eigen::Matrix4d&)[m[K’:
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:312:45:[m[K [01;31m[Kerror: [m[K‘[01m[KT[m[K’ was not declared in this scope; did you mean ‘[01m[Kpcl::deprecated::T[m[K’?
+  312 |         T_cam_ee = enforceAffineConstraints([01;31m[KT[m[K);
+      |                                             [01;31m[K^[m[K
+      |                                             [32m[Kpcl::deprecated::T[m[K
+In file included from [01m[K/usr/include/pcl-1.12/pcl/memory.h:46[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/pcl_base.h:46[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/correspondence.h:45[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/visualization/pcl_visualizer.h:42[m[K,
+                 from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:7[m[K:
+[01m[K/usr/include/pcl-1.12/pcl/type_traits.h:56:12:[m[K [01;36m[Knote: [m[K‘[01m[Kpcl::deprecated::T[m[K’ declared here
+   56 |     struct [01;36m[KT[m[K {};
+      |            [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/calibration_node.dir/build.make:76: CMakeFiles/calibration_node.dir/src/calibration_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/calibration_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
