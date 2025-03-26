@@ -95,7 +95,7 @@ Raw point cloud data contains **noise and misalignment**. You will filter and al
 ## MY IMPLEMENTATION
 - Instructions:
 This repo contains a ROS 2 Humble workspace that performs the two tasks. Each task can be utilized by uncommenting its appropriate node in the launch file. This workspace runs on Ubuntu 22.04, and utilizes Eigen, PCL, and VTK.
-Data generation is inside of the data_generation_scripts directory. These scripts were not designed to be ROS nodes, as they are ideally run before any calibration or data processing occurs.
+Data generation is inside of the data_generation_scripts directory. These data generation scripts were not designed to be ROS nodes, as they are ideally run before any calibration or data processing occurs.
     - data_generation_calibration.py generates the 500 robot poses and scans for hand-eye calibration
     - data_generation_scan_processing generates the 2 point clouds for ICP
     - verify_data_pairs.py shows the point-to-point correspondences for a single scan for debugging
