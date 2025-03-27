@@ -1,0 +1,170 @@
+[0.000000] (-) TimerEvent: {}
+[0.000076] (hand_eye_calibration) JobQueued: {'identifier': 'hand_eye_calibration', 'dependencies': OrderedDict()}
+[0.000091] (hand_eye_calibration) JobStarted: {'identifier': 'hand_eye_calibration'}
+[0.004562] (hand_eye_calibration) JobProgress: {'identifier': 'hand_eye_calibration', 'progress': 'cmake'}
+[0.005083] (hand_eye_calibration) JobProgress: {'identifier': 'hand_eye_calibration', 'progress': 'build'}
+[0.005530] (hand_eye_calibration) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/parallels/calib_ws/build/hand_eye_calibration', '--', '-j2', '-l2'], 'cwd': '/home/parallels/calib_ws/build/hand_eye_calibration', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VTK_DEFAULT_RENDERER', 'Mesa'), ('USER', 'parallels'), ('MESA_LOADER_DRIVER_OVERRIDE', 'llvmpipe'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/jvm/java-11-openjdk-arm64/lib/libjawt.so'), ('HOME', '/home/parallels'), ('OLDPWD', '/home/parallels'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2085'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6eebf058caf05e71ca02930a67d74c06'), ('COLORTERM', 'truecolor'), ('VTK_RENDERER_BACKEND', 'OpenGL2'), ('COLCON_PREFIX_PATH', '/home/parallels/calib_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'parallels'), ('_', '/home/parallels/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'parallels'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/parallels/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-linux-22-04-desktop:@/tmp/.ICE-unix/2085,unix/ubuntu-linux-22-04-desktop:/tmp/.ICE-unix/2085'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/882fd45e_baa7_4d3c_884f_bb0886ff37ee'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/parallels/calib_ws/install/hand_eye_calibration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/parallels/calib_ws/build/hand_eye_calibration'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6eebf058caf05e71ca02930a67d74c06'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/parallels/calib_ws/install/hand_eye_calibration:/opt/ros/humble')]), 'shell': False}
+[0.030612] (hand_eye_calibration) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target calibration_node\x1b[0m\n'}
+[0.054023] (hand_eye_calibration) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/calibration_node.dir/src/calibration_node.cpp.o\x1b[0m\n'}
+[0.054193] (hand_eye_calibration) StdoutLine: {'line': b'[ 75%] Built target scan_processing_node\n'}
+[0.099641] (-) TimerEvent: {}
+[0.199835] (-) TimerEvent: {}
+[0.300356] (-) TimerEvent: {}
+[0.401021] (-) TimerEvent: {}
+[0.502155] (-) TimerEvent: {}
+[0.603019] (-) TimerEvent: {}
+[0.703608] (-) TimerEvent: {}
+[0.804912] (-) TimerEvent: {}
+[0.906014] (-) TimerEvent: {}
+[1.006739] (-) TimerEvent: {}
+[1.107380] (-) TimerEvent: {}
+[1.212598] (-) TimerEvent: {}
+[1.317813] (-) TimerEvent: {}
+[1.418055] (-) TimerEvent: {}
+[1.518267] (-) TimerEvent: {}
+[1.618506] (-) TimerEvent: {}
+[1.721913] (-) TimerEvent: {}
+[1.827128] (-) TimerEvent: {}
+[1.927681] (-) TimerEvent: {}
+[2.027895] (-) TimerEvent: {}
+[2.129654] (-) TimerEvent: {}
+[2.231857] (-) TimerEvent: {}
+[2.334607] (-) TimerEvent: {}
+[2.437044] (-) TimerEvent: {}
+[2.540079] (-) TimerEvent: {}
+[2.640867] (-) TimerEvent: {}
+[2.741715] (-) TimerEvent: {}
+[2.841934] (-) TimerEvent: {}
+[2.942197] (-) TimerEvent: {}
+[2.952834] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/aarch64-linux-gnu/c++/11/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[2.952931] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[2.952962] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:64\x1b[m\x1b[K,\n'}
+[2.952987] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.953010] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:1\x1b[m\x1b[K:\n'}
+[2.953034] (hand_eye_calibration) StderrLine: {'line': b'/usr/include/c++/11/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass __gnu_cxx::new_allocator<Eigen::Matrix<double, 4, 4>&>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.953058] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:124:11:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kclass std::allocator<Eigen::Matrix<double, 4, 4>&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.953082] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:87:21:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstruct std::_Vector_base<Eigen::Matrix<double, 4, 4>&, std::allocator<Eigen::Matrix<double, 4, 4>&> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.953105] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:389:11:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kclass std::vector<Eigen::Matrix<double, 4, 4>&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.953131] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:44:39:\x1b[m\x1b[K   required from here\n'}
+[2.953155] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:62:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kforming pointer to reference type \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 4, 4>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.953178] (hand_eye_calibration) StderrLine: {'line': b'   62 |       typedef _Tp*       \x1b[01;31m\x1b[Kpointer\x1b[m\x1b[K;\n'}
+[2.953200] (hand_eye_calibration) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.953222] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:63:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kforming pointer to reference type \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 4, 4>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.953243] (hand_eye_calibration) StderrLine: {'line': b'   63 |       typedef const _Tp* \x1b[01;31m\x1b[Kconst_pointer\x1b[m\x1b[K;\n'}
+[2.953267] (hand_eye_calibration) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.953288] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:103:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kforming pointer to reference type \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 4, 4>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.953311] (hand_eye_calibration) StderrLine: {'line': b'  103 |       \x1b[01;31m\x1b[Kallocate\x1b[m\x1b[K(size_type __n, const void* = static_cast<const void*>(0))\n'}
+[2.953333] (hand_eye_calibration) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.953354] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:132:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kforming pointer to reference type \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 4, 4>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.953377] (hand_eye_calibration) StderrLine: {'line': b'  132 |       \x1b[01;31m\x1b[Kdeallocate\x1b[m\x1b[K(_Tp* __p, size_type __t __attribute__ ((__unused__)))\n'}
+[2.953399] (hand_eye_calibration) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.953486] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:64\x1b[m\x1b[K,\n'}
+[2.953511] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.953533] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:1\x1b[m\x1b[K:\n'}
+[2.953555] (hand_eye_calibration) StderrLine: {'line': b'/usr/include/c++/11/bits/allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass std::allocator<Eigen::Matrix<double, 4, 4>&>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.953578] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:87:21:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstruct std::_Vector_base<Eigen::Matrix<double, 4, 4>&, std::allocator<Eigen::Matrix<double, 4, 4>&> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.953601] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:389:11:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kclass std::vector<Eigen::Matrix<double, 4, 4>&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.953625] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:44:39:\x1b[m\x1b[K   required from here\n'}
+[2.953647] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:133:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kforming pointer to reference type \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 4, 4>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.953682] (hand_eye_calibration) StderrLine: {'line': b'  133 |       typedef _Tp*       \x1b[01;31m\x1b[Kpointer\x1b[m\x1b[K;\n'}
+[2.953704] (hand_eye_calibration) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.953726] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:134:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kforming pointer to reference type \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 4, 4>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.953751] (hand_eye_calibration) StderrLine: {'line': b'  134 |       typedef const _Tp* \x1b[01;31m\x1b[Kconst_pointer\x1b[m\x1b[K;\n'}
+[2.953774] (hand_eye_calibration) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.953800] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/ext/alloc_traits.h:34\x1b[m\x1b[K,\n'}
+[2.953825] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_uninitialized.h:64\x1b[m\x1b[K,\n'}
+[2.953863] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:66\x1b[m\x1b[K,\n'}
+[2.953886] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.953910] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:1\x1b[m\x1b[K:\n'}
+[2.953953] (hand_eye_calibration) StderrLine: {'line': b'/usr/include/c++/11/bits/alloc_traits.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstruct std::allocator_traits<std::allocator<Eigen::Matrix<double, 4, 4>&> >\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.953980] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/alloc_traits.h:48:10:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstruct __gnu_cxx::__alloc_traits<std::allocator<Eigen::Matrix<double, 4, 4>&>, Eigen::Matrix<double, 4, 4>&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.954007] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:87:21:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstruct std::_Vector_base<Eigen::Matrix<double, 4, 4>&, std::allocator<Eigen::Matrix<double, 4, 4>&> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.954037] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:389:11:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kclass std::vector<Eigen::Matrix<double, 4, 4>&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.954063] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:44:39:\x1b[m\x1b[K   required from here\n'}
+[2.954090] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:420:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kforming pointer to reference type \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 4, 4>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.954116] (hand_eye_calibration) StderrLine: {'line': b'  420 |       using \x1b[01;31m\x1b[Kpointer\x1b[m\x1b[K = _Tp*;\n'}
+[2.954145] (hand_eye_calibration) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.954173] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:423:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kforming pointer to reference type \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 4, 4>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.954202] (hand_eye_calibration) StderrLine: {'line': b'  423 |       using \x1b[01;31m\x1b[Kconst_pointer\x1b[m\x1b[K = const _Tp*;\n'}
+[2.954229] (hand_eye_calibration) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.954259] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_uninitialized.h:64\x1b[m\x1b[K,\n'}
+[2.954288] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:66\x1b[m\x1b[K,\n'}
+[2.954317] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.954346] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:1\x1b[m\x1b[K:\n'}
+[2.954373] (hand_eye_calibration) StderrLine: {'line': b'/usr/include/c++/11/ext/alloc_traits.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstruct __gnu_cxx::__alloc_traits<std::allocator<Eigen::Matrix<double, 4, 4>&>, Eigen::Matrix<double, 4, 4>&>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.954403] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:87:21:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstruct std::_Vector_base<Eigen::Matrix<double, 4, 4>&, std::allocator<Eigen::Matrix<double, 4, 4>&> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.954549] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:389:11:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kclass std::vector<Eigen::Matrix<double, 4, 4>&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.954596] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:44:39:\x1b[m\x1b[K   required from here\n'}
+[2.954626] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/alloc_traits.h:64:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kallocate\x1b[m\x1b[K\xe2\x80\x99 has not been declared in \xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__alloc_traits<std::allocator<Eigen::Matrix<double, 4, 4>&>, Eigen::Matrix<double, 4, 4>&>::_Base_type\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.954675] (hand_eye_calibration) StderrLine: {'line': b'   64 |     using _Base_type::\x1b[01;31m\x1b[Kallocate\x1b[m\x1b[K;\n'}
+[2.954717] (hand_eye_calibration) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.954746] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/alloc_traits.h:65:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdeallocate\x1b[m\x1b[K\xe2\x80\x99 has not been declared in \xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__alloc_traits<std::allocator<Eigen::Matrix<double, 4, 4>&>, Eigen::Matrix<double, 4, 4>&>::_Base_type\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.954779] (hand_eye_calibration) StderrLine: {'line': b'   65 |     using _Base_type::\x1b[01;31m\x1b[Kdeallocate\x1b[m\x1b[K;\n'}
+[2.954805] (hand_eye_calibration) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.954834] (hand_eye_calibration) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/vector:67\x1b[m\x1b[K,\n'}
+[2.954863] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:62\x1b[m\x1b[K,\n'}
+[2.954891] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[2.954917] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[2.954991] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[2.955020] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.955049] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.955081] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.955110] (hand_eye_calibration) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:1\x1b[m\x1b[K:\n'}
+[2.955139] (hand_eye_calibration) StderrLine: {'line': b'/usr/include/c++/11/bits/stl_vector.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass std::vector<Eigen::Matrix<double, 4, 4>&>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.955168] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:44:39:\x1b[m\x1b[K   required from here\n'}
+[2.955197] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:474:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_M_allocate\x1b[m\x1b[K\xe2\x80\x99 has not been declared in \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Eigen::Matrix<double, 4, 4>&>::_Base\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.955226] (hand_eye_calibration) StderrLine: {'line': b'  474 |       using _Base::\x1b[01;31m\x1b[K_M_allocate\x1b[m\x1b[K;\n'}
+[2.955254] (hand_eye_calibration) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.955282] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:475:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_M_deallocate\x1b[m\x1b[K\xe2\x80\x99 has not been declared in \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Eigen::Matrix<double, 4, 4>&>::_Base\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.955311] (hand_eye_calibration) StderrLine: {'line': b'  475 |       using _Base::\x1b[01;31m\x1b[K_M_deallocate\x1b[m\x1b[K;\n'}
+[2.955340] (hand_eye_calibration) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.955368] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1168:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kforming pointer to reference type \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 4, 4>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.955396] (hand_eye_calibration) StderrLine: {'line': b' 1168 |       \x1b[01;31m\x1b[Kdata\x1b[m\x1b[K() _GLIBCXX_NOEXCEPT\n'}
+[2.955425] (hand_eye_calibration) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.955453] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1172:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kforming pointer to reference type \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<double, 4, 4>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.955481] (hand_eye_calibration) StderrLine: {'line': b' 1172 |       \x1b[01;31m\x1b[Kdata\x1b[m\x1b[K() const _GLIBCXX_NOEXCEPT\n'}
+[2.955509] (hand_eye_calibration) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.955538] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1203:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = Eigen::Matrix<double, 4, 4>&; _Alloc = std::allocator<Eigen::Matrix<double, 4, 4>&>; std::vector<_Tp, _Alloc>::value_type = Eigen::Matrix<double, 4, 4>&]\x1b[m\x1b[K\xe2\x80\x99 cannot be overloaded with \xe2\x80\x98\x1b[01m\x1b[Kvoid std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = Eigen::Matrix<double, 4, 4>&; _Alloc = std::allocator<Eigen::Matrix<double, 4, 4>&>; std::vector<_Tp, _Alloc>::value_type = Eigen::Matrix<double, 4, 4>&]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.955570] (hand_eye_calibration) StderrLine: {'line': b' 1203 |       \x1b[01;31m\x1b[Kpush_back\x1b[m\x1b[K(value_type&& __x)\n'}
+[2.955599] (hand_eye_calibration) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.955629] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1187:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kvoid std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = Eigen::Matrix<double, 4, 4>&; _Alloc = std::allocator<Eigen::Matrix<double, 4, 4>&>; std::vector<_Tp, _Alloc>::value_type = Eigen::Matrix<double, 4, 4>&]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.955658] (hand_eye_calibration) StderrLine: {'line': b' 1187 |       \x1b[01;36m\x1b[Kpush_back\x1b[m\x1b[K(const value_type& __x)\n'}
+[2.955686] (hand_eye_calibration) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.955715] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KCalibrationNode::CalibrationNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.955745] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:44:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Kvector<\x1b[01;32m\x1b[KEigen::Matrix<double, 4, 4>\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kvector<\x1b[01;32m\x1b[KEigen::Matrix<double, 4, 4>&\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.955774] (hand_eye_calibration) StderrLine: {'line': b'   44 |         float averageRMSE = validate_T(T_cam_ee, \x1b[01;31m\x1b[Kflange_poses\x1b[m\x1b[K, scans, board_points);\n'}
+[2.955803] (hand_eye_calibration) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.955831] (hand_eye_calibration) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[2.955859] (hand_eye_calibration) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[Kvector<Eigen::Matrix<double, 4, 4>>\x1b[m\x1b[K\n'}
+[2.955887] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:336:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 2 of \xe2\x80\x98\x1b[01m\x1b[Kfloat CalibrationNode::validate_T(Eigen::Matrix4d&, std::vector<Eigen::Matrix<double, 4, 4>&>, std::vector<std::vector<Eigen::Matrix<double, 4, 1> > >, std::vector<std::vector<Eigen::Matrix<double, 4, 1> > >)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.955918] (hand_eye_calibration) StderrLine: {'line': b'  336 |     float validate_T(Matrix4d& T_cam_ee, \x1b[01;36m\x1b[Kvector<Matrix4d&> flange_poses\x1b[m\x1b[K, vector<vector<Vector4d>> scans, vector<vector<Vector4d>> board_points) {\n'}
+[2.955949] (hand_eye_calibration) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.042497] (-) TimerEvent: {}
+[3.144722] (-) TimerEvent: {}
+[3.245599] (-) TimerEvent: {}
+[3.317815] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kfloat CalibrationNode::validate_T(Eigen::Matrix4d&, std::vector<Eigen::Matrix<double, 4, 4>&>, std::vector<std::vector<Eigen::Matrix<double, 4, 1> > >, std::vector<std::vector<Eigen::Matrix<double, 4, 1> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.317988] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:342:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.318021] (hand_eye_calibration) StderrLine: {'line': b'  342 |             Matrix4d poseInverse = flange_poses[\x1b[01;31m\x1b[Ki\x1b[m\x1b[K].inverse();\n'}
+[3.318047] (hand_eye_calibration) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.318076] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:347:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconversion from \xe2\x80\x98\x1b[01m\x1b[Kvector<\x1b[01;32m\x1b[Kstd::vector<Eigen::Matrix<double, 4, 1> >\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 to non-scalar type \xe2\x80\x98\x1b[01m\x1b[Kvector<\x1b[01;32m\x1b[KEigen::Matrix<double, 4, 1>\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 requested\n'}
+[3.318101] (hand_eye_calibration) StderrLine: {'line': b'  347 |             vector<Vector4d> cameraPointSet = \x1b[01;31m\x1b[Kscans\x1b[m\x1b[K;\n'}
+[3.318126] (hand_eye_calibration) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.318150] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:348:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconversion from \xe2\x80\x98\x1b[01m\x1b[Kvector<\x1b[01;32m\x1b[Kstd::vector<Eigen::Matrix<double, 4, 1> >\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 to non-scalar type \xe2\x80\x98\x1b[01m\x1b[Kvector<\x1b[01;32m\x1b[KEigen::Matrix<double, 4, 1>\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 requested\n'}
+[3.318174] (hand_eye_calibration) StderrLine: {'line': b'  348 |             vector<Vector4d> worldPointSet = \x1b[01;31m\x1b[Kboard_points\x1b[m\x1b[K;\n'}
+[3.318196] (hand_eye_calibration) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.345896] (-) TimerEvent: {}
+[3.446454] (-) TimerEvent: {}
+[3.547012] (-) TimerEvent: {}
+[3.647569] (-) TimerEvent: {}
+[3.747855] (-) TimerEvent: {}
+[3.848198] (-) TimerEvent: {}
+[3.949066] (-) TimerEvent: {}
+[4.049962] (-) TimerEvent: {}
+[4.155214] (-) TimerEvent: {}
+[4.255806] (-) TimerEvent: {}
+[4.276748] (hand_eye_calibration) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/calibration_node.dir/build.make:76: CMakeFiles/calibration_node.dir/src/calibration_node.cpp.o] Error 1\n'}
+[4.276924] (hand_eye_calibration) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/calibration_node.dir/all] Error 2\n'}
+[4.277024] (hand_eye_calibration) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.278514] (hand_eye_calibration) CommandEnded: {'returncode': 2}
+[4.286373] (hand_eye_calibration) JobEnded: {'identifier': 'hand_eye_calibration', 'rc': 2}
+[4.297203] (-) EventReactorShutdown: {}

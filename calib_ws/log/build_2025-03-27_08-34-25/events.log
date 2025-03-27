@@ -1,0 +1,62 @@
+[0.000000] (-) TimerEvent: {}
+[0.000097] (hand_eye_calibration) JobQueued: {'identifier': 'hand_eye_calibration', 'dependencies': OrderedDict()}
+[0.000118] (hand_eye_calibration) JobStarted: {'identifier': 'hand_eye_calibration'}
+[0.003090] (hand_eye_calibration) JobProgress: {'identifier': 'hand_eye_calibration', 'progress': 'cmake'}
+[0.003593] (hand_eye_calibration) JobProgress: {'identifier': 'hand_eye_calibration', 'progress': 'build'}
+[0.004036] (hand_eye_calibration) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/parallels/calib_ws/build/hand_eye_calibration', '--', '-j2', '-l2'], 'cwd': '/home/parallels/calib_ws/build/hand_eye_calibration', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VTK_DEFAULT_RENDERER', 'Mesa'), ('USER', 'parallels'), ('MESA_LOADER_DRIVER_OVERRIDE', 'llvmpipe'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/jvm/java-11-openjdk-arm64/lib/libjawt.so'), ('HOME', '/home/parallels'), ('OLDPWD', '/home/parallels'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2085'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6eebf058caf05e71ca02930a67d74c06'), ('COLORTERM', 'truecolor'), ('VTK_RENDERER_BACKEND', 'OpenGL2'), ('COLCON_PREFIX_PATH', '/home/parallels/calib_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'parallels'), ('_', '/home/parallels/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'parallels'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/parallels/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-linux-22-04-desktop:@/tmp/.ICE-unix/2085,unix/ubuntu-linux-22-04-desktop:/tmp/.ICE-unix/2085'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/882fd45e_baa7_4d3c_884f_bb0886ff37ee'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/parallels/calib_ws/install/hand_eye_calibration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/parallels/calib_ws/build/hand_eye_calibration'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6eebf058caf05e71ca02930a67d74c06'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/parallels/calib_ws/install/hand_eye_calibration:/opt/ros/humble')]), 'shell': False}
+[0.030544] (hand_eye_calibration) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target calibration_node\x1b[0m\n'}
+[0.040515] (hand_eye_calibration) StdoutLine: {'line': b'[ 50%] Built target scan_processing_node\n'}
+[0.043450] (hand_eye_calibration) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/calibration_node.dir/src/calibration_node.cpp.o\x1b[0m\n'}
+[0.100045] (-) TimerEvent: {}
+[0.200248] (-) TimerEvent: {}
+[0.300898] (-) TimerEvent: {}
+[0.402326] (-) TimerEvent: {}
+[0.502832] (-) TimerEvent: {}
+[0.603392] (-) TimerEvent: {}
+[0.704762] (-) TimerEvent: {}
+[0.805352] (-) TimerEvent: {}
+[0.908610] (-) TimerEvent: {}
+[1.010239] (-) TimerEvent: {}
+[1.110636] (-) TimerEvent: {}
+[1.211089] (-) TimerEvent: {}
+[1.311333] (-) TimerEvent: {}
+[1.415042] (-) TimerEvent: {}
+[1.515776] (-) TimerEvent: {}
+[1.616197] (-) TimerEvent: {}
+[1.717159] (-) TimerEvent: {}
+[1.817516] (-) TimerEvent: {}
+[1.921678] (-) TimerEvent: {}
+[2.023165] (-) TimerEvent: {}
+[2.123654] (-) TimerEvent: {}
+[2.223867] (-) TimerEvent: {}
+[2.324607] (-) TimerEvent: {}
+[2.429810] (-) TimerEvent: {}
+[2.535020] (-) TimerEvent: {}
+[2.639171] (-) TimerEvent: {}
+[2.744358] (-) TimerEvent: {}
+[2.845262] (-) TimerEvent: {}
+[2.946974] (-) TimerEvent: {}
+[3.047635] (-) TimerEvent: {}
+[3.152878] (-) TimerEvent: {}
+[3.203373] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kfloat CalibrationNode::validate_T(Eigen::Matrix4d, std::vector<Eigen::Matrix<double, 4, 4> >, std::vector<std::vector<Eigen::Matrix<double, 4, 1> > >, std::vector<std::vector<Eigen::Matrix<double, 4, 1> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.203512] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:347:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconversion from \xe2\x80\x98\x1b[01m\x1b[Kvector<\x1b[01;32m\x1b[Kstd::vector<Eigen::Matrix<double, 4, 1> >\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 to non-scalar type \xe2\x80\x98\x1b[01m\x1b[Kvector<\x1b[01;32m\x1b[KEigen::Matrix<double, 4, 1>\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 requested\n'}
+[3.203548] (hand_eye_calibration) StderrLine: {'line': b'  347 |             vector<Vector4d> cameraPointSet = \x1b[01;31m\x1b[Kscans\x1b[m\x1b[K;\n'}
+[3.203575] (hand_eye_calibration) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.203626] (hand_eye_calibration) StderrLine: {'line': b'\x1b[01m\x1b[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:348:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconversion from \xe2\x80\x98\x1b[01m\x1b[Kvector<\x1b[01;32m\x1b[Kstd::vector<Eigen::Matrix<double, 4, 1> >\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 to non-scalar type \xe2\x80\x98\x1b[01m\x1b[Kvector<\x1b[01;32m\x1b[KEigen::Matrix<double, 4, 1>\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 requested\n'}
+[3.203659] (hand_eye_calibration) StderrLine: {'line': b'  348 |             vector<Vector4d> worldPointSet = \x1b[01;31m\x1b[Kboard_points\x1b[m\x1b[K;\n'}
+[3.203683] (hand_eye_calibration) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.253680] (-) TimerEvent: {}
+[3.353876] (-) TimerEvent: {}
+[3.454658] (-) TimerEvent: {}
+[3.557812] (-) TimerEvent: {}
+[3.661113] (-) TimerEvent: {}
+[3.761909] (-) TimerEvent: {}
+[3.864511] (-) TimerEvent: {}
+[3.965718] (-) TimerEvent: {}
+[4.065953] (-) TimerEvent: {}
+[4.140133] (hand_eye_calibration) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/calibration_node.dir/build.make:76: CMakeFiles/calibration_node.dir/src/calibration_node.cpp.o] Error 1\n'}
+[4.140319] (hand_eye_calibration) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/calibration_node.dir/all] Error 2\n'}
+[4.140382] (hand_eye_calibration) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.141556] (hand_eye_calibration) CommandEnded: {'returncode': 2}
+[4.146380] (hand_eye_calibration) JobEnded: {'identifier': 'hand_eye_calibration', 'rc': 2}
+[4.157158] (-) EventReactorShutdown: {}

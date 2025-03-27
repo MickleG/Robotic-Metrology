@@ -1,0 +1,108 @@
+[0.000000] (-) TimerEvent: {}
+[0.000093] (hand_eye_calibration) JobQueued: {'identifier': 'hand_eye_calibration', 'dependencies': OrderedDict()}
+[0.000113] (hand_eye_calibration) JobStarted: {'identifier': 'hand_eye_calibration'}
+[0.004541] (hand_eye_calibration) JobProgress: {'identifier': 'hand_eye_calibration', 'progress': 'cmake'}
+[0.004995] (hand_eye_calibration) JobProgress: {'identifier': 'hand_eye_calibration', 'progress': 'build'}
+[0.005437] (hand_eye_calibration) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/parallels/calib_ws/build/hand_eye_calibration', '--', '-j2', '-l2'], 'cwd': '/home/parallels/calib_ws/build/hand_eye_calibration', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VTK_DEFAULT_RENDERER', 'Mesa'), ('USER', 'parallels'), ('MESA_LOADER_DRIVER_OVERRIDE', 'llvmpipe'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/jvm/java-11-openjdk-arm64/lib/libjawt.so'), ('HOME', '/home/parallels'), ('OLDPWD', '/home/parallels'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2085'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6eebf058caf05e71ca02930a67d74c06'), ('COLORTERM', 'truecolor'), ('VTK_RENDERER_BACKEND', 'OpenGL2'), ('COLCON_PREFIX_PATH', '/home/parallels/calib_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'parallels'), ('_', '/home/parallels/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'parallels'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/parallels/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-linux-22-04-desktop:@/tmp/.ICE-unix/2085,unix/ubuntu-linux-22-04-desktop:/tmp/.ICE-unix/2085'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/882fd45e_baa7_4d3c_884f_bb0886ff37ee'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/parallels/calib_ws/install/hand_eye_calibration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/parallels/calib_ws/build/hand_eye_calibration'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6eebf058caf05e71ca02930a67d74c06'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/parallels/calib_ws/install/hand_eye_calibration:/opt/ros/humble')]), 'shell': False}
+[0.032660] (hand_eye_calibration) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target calibration_node\x1b[0m\n'}
+[0.063437] (hand_eye_calibration) StdoutLine: {'line': b'[ 50%] Built target scan_processing_node\n'}
+[0.066027] (hand_eye_calibration) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/calibration_node.dir/src/calibration_node.cpp.o\x1b[0m\n'}
+[0.099644] (-) TimerEvent: {}
+[0.199818] (-) TimerEvent: {}
+[0.300103] (-) TimerEvent: {}
+[0.401031] (-) TimerEvent: {}
+[0.503351] (-) TimerEvent: {}
+[0.604526] (-) TimerEvent: {}
+[0.704877] (-) TimerEvent: {}
+[0.805065] (-) TimerEvent: {}
+[0.905295] (-) TimerEvent: {}
+[1.005661] (-) TimerEvent: {}
+[1.105890] (-) TimerEvent: {}
+[1.206738] (-) TimerEvent: {}
+[1.312107] (-) TimerEvent: {}
+[1.412452] (-) TimerEvent: {}
+[1.512877] (-) TimerEvent: {}
+[1.613161] (-) TimerEvent: {}
+[1.713577] (-) TimerEvent: {}
+[1.816296] (-) TimerEvent: {}
+[1.919673] (-) TimerEvent: {}
+[2.021592] (-) TimerEvent: {}
+[2.124832] (-) TimerEvent: {}
+[2.225207] (-) TimerEvent: {}
+[2.328804] (-) TimerEvent: {}
+[2.432309] (-) TimerEvent: {}
+[2.535680] (-) TimerEvent: {}
+[2.636152] (-) TimerEvent: {}
+[2.737364] (-) TimerEvent: {}
+[2.837987] (-) TimerEvent: {}
+[2.938729] (-) TimerEvent: {}
+[3.043387] (-) TimerEvent: {}
+[3.147841] (-) TimerEvent: {}
+[3.248147] (-) TimerEvent: {}
+[3.353432] (-) TimerEvent: {}
+[3.453696] (-) TimerEvent: {}
+[3.557381] (-) TimerEvent: {}
+[3.658452] (-) TimerEvent: {}
+[3.761349] (-) TimerEvent: {}
+[3.862922] (-) TimerEvent: {}
+[3.963726] (-) TimerEvent: {}
+[4.065495] (-) TimerEvent: {}
+[4.168196] (-) TimerEvent: {}
+[4.269435] (-) TimerEvent: {}
+[4.369886] (-) TimerEvent: {}
+[4.470278] (-) TimerEvent: {}
+[4.570685] (-) TimerEvent: {}
+[4.670876] (-) TimerEvent: {}
+[4.773717] (-) TimerEvent: {}
+[4.873976] (-) TimerEvent: {}
+[4.887573] (hand_eye_calibration) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable calibration_node\x1b[0m\n'}
+[4.974152] (-) TimerEvent: {}
+[5.074412] (-) TimerEvent: {}
+[5.174725] (-) TimerEvent: {}
+[5.274946] (-) TimerEvent: {}
+[5.377007] (-) TimerEvent: {}
+[5.479191] (-) TimerEvent: {}
+[5.580242] (-) TimerEvent: {}
+[5.683072] (-) TimerEvent: {}
+[5.788201] (-) TimerEvent: {}
+[5.888381] (-) TimerEvent: {}
+[5.895270] (hand_eye_calibration) StdoutLine: {'line': b'[100%] Built target calibration_node\n'}
+[5.899972] (hand_eye_calibration) CommandEnded: {'returncode': 0}
+[5.900521] (hand_eye_calibration) JobProgress: {'identifier': 'hand_eye_calibration', 'progress': 'install'}
+[5.903837] (hand_eye_calibration) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/parallels/calib_ws/build/hand_eye_calibration'], 'cwd': '/home/parallels/calib_ws/build/hand_eye_calibration', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VTK_DEFAULT_RENDERER', 'Mesa'), ('USER', 'parallels'), ('MESA_LOADER_DRIVER_OVERRIDE', 'llvmpipe'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/jvm/java-11-openjdk-arm64/lib/libjawt.so'), ('HOME', '/home/parallels'), ('OLDPWD', '/home/parallels'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2085'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6eebf058caf05e71ca02930a67d74c06'), ('COLORTERM', 'truecolor'), ('VTK_RENDERER_BACKEND', 'OpenGL2'), ('COLCON_PREFIX_PATH', '/home/parallels/calib_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'parallels'), ('_', '/home/parallels/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'parallels'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/parallels/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-linux-22-04-desktop:@/tmp/.ICE-unix/2085,unix/ubuntu-linux-22-04-desktop:/tmp/.ICE-unix/2085'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/882fd45e_baa7_4d3c_884f_bb0886ff37ee'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/parallels/calib_ws/install/hand_eye_calibration:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/parallels/calib_ws/build/hand_eye_calibration'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6eebf058caf05e71ca02930a67d74c06'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/parallels/calib_ws/install/hand_eye_calibration:/opt/ros/humble')]), 'shell': False}
+[5.906853] (hand_eye_calibration) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.907093] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/lib/hand_eye_calibration/scan_processing_node\n'}
+[5.907329] (hand_eye_calibration) StdoutLine: {'line': b'-- Installing: /home/parallels/calib_ws/install/hand_eye_calibration/lib/hand_eye_calibration/calibration_node\n'}
+[5.908359] (hand_eye_calibration) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/calib_ws/install/hand_eye_calibration/lib/hand_eye_calibration/calibration_node" to ""\n'}
+[5.908406] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/include\n'}
+[5.908488] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/include/hand_eye_calibration\n'}
+[5.908575] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/include/hand_eye_calibration/scan_processing_node.hpp\n'}
+[5.908610] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/include/hand_eye_calibration/calibration_node.hpp\n'}
+[5.908723] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/launch\n'}
+[5.908757] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/launch/hand_eye_calibration_launch.py\n'}
+[5.908816] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/data\n'}
+[5.908848] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/data/calibration\n'}
+[5.908954] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/data/calibration/synthetic_scans.dat\n'}
+[5.908983] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/data/calibration/calibration_board_points.dat\n'}
+[5.909013] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/data/calibration/flange_poses.dat\n'}
+[5.909041] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/data/scan_processing\n'}
+[5.909068] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/data/scan_processing/scan2.dat\n'}
+[5.909127] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/data/scan_processing/scan1.dat\n'}
+[5.909197] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/ament_index/resource_index/package_run_dependencies/hand_eye_calibration\n'}
+[5.909257] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/ament_index/resource_index/parent_prefix_path/hand_eye_calibration\n'}
+[5.909336] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/environment/ament_prefix_path.sh\n'}
+[5.909394] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/environment/ament_prefix_path.dsv\n'}
+[5.909452] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/environment/path.sh\n'}
+[5.909511] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/environment/path.dsv\n'}
+[5.909567] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/local_setup.bash\n'}
+[5.909628] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/local_setup.sh\n'}
+[5.909685] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/local_setup.zsh\n'}
+[5.909740] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/local_setup.dsv\n'}
+[5.909798] (hand_eye_calibration) StdoutLine: {'line': b'-- Installing: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/package.dsv\n'}
+[5.909914] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/ament_index/resource_index/packages/hand_eye_calibration\n'}
+[5.909988] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/cmake/hand_eye_calibrationConfig.cmake\n'}
+[5.910017] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/cmake/hand_eye_calibrationConfig-version.cmake\n'}
+[5.910074] (hand_eye_calibration) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/calib_ws/install/hand_eye_calibration/share/hand_eye_calibration/package.xml\n'}
+[5.910709] (hand_eye_calibration) CommandEnded: {'returncode': 0}
+[5.920254] (hand_eye_calibration) JobEnded: {'identifier': 'hand_eye_calibration', 'rc': 0}
+[5.920413] (-) EventReactorShutdown: {}

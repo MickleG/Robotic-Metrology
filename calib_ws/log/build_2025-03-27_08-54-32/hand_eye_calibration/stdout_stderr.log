@@ -1,0 +1,26 @@
+[35m[1mConsolidate compiler generated dependencies of target calibration_node[0m
+[ 50%] Built target scan_processing_node
+[ 75%] [32mBuilding CXX object CMakeFiles/calibration_node.dir/src/calibration_node.cpp.o[0m
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:[m[K In member function ‘[01m[Kvoid CalibrationNode::visualizeBackprojection(std::vector<Eigen::Matrix<double, 4, 4> >, Eigen::Matrix4d, std::vector<std::vector<Eigen::Matrix<double, 4, 1> > >, std::vector<std::vector<Eigen::Matrix<double, 4, 1> > >)[m[K’:
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:187:13:[m[K [01;31m[Kerror: [m[K‘[01m[KPointCLoud[m[K’ was not declared in this scope
+  187 |             [01;31m[KPointCLoud[m[K<PointXYZRGB>::Ptr board_cloud(new PointCLoud<PointXYZRGB>);
+      |             [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:187:35:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  187 |             PointCLoud<PointXYZRGB[01;31m[K>[m[K::Ptr board_cloud(new PointCLoud<PointXYZRGB>);
+      |                                   [01;31m[K^[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:187:38:[m[K [01;31m[Kerror: [m[K‘[01m[K::Ptr[m[K’ has not been declared
+  187 |             PointCLoud<PointXYZRGB>::[01;31m[KPtr[m[K board_cloud(new PointCLoud<PointXYZRGB>);
+      |                                      [01;31m[K^~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:196:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kpoint_ee[m[K’ was not declared in this scope; did you mean ‘[01m[Kpoint_set[m[K’?
+  196 |                 Vector4d point_backprojected = pose.inverse() * [01;31m[Kpoint_ee[m[K;
+      |                                                                 [01;31m[K^~~~~~~~[m[K
+      |                                                                 [32m[Kpoint_set[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:230:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kboard_cloud[m[K’ was not declared in this scope
+  230 |                 [01;31m[Kboard_cloud[m[K->points.push_back(pcl_point_camera);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:242:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kboard_cloud[m[K’ was not declared in this scope
+  242 |             viewer.addPointCloud([01;31m[Kboard_cloud[m[K, board_name);
+      |                                  [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/calibration_node.dir/build.make:76: CMakeFiles/calibration_node.dir/src/calibration_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/calibration_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,17 @@
+[0.005s] Invoking command in '/home/parallels/calib_ws/build/hand_eye_calibration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/calib_ws/build/hand_eye_calibration -- -j2 -l2
+[0.036s] [35m[1mConsolidate compiler generated dependencies of target calibration_node[0m
+[0.048s] [ 50%] Built target scan_processing_node
+[0.069s] [ 75%] [32mBuilding CXX object CMakeFiles/calibration_node.dir/src/calibration_node.cpp.o[0m
+[2.963s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:[m[K In member function ‘[01m[KEigen::Matrix4d CalibrationNode::compute_T_cam_ee(std::vector<Eigen::Matrix<double, 4, 4> >, std::vector<std::vector<Eigen::Matrix<double, 4, 1> > >&, std::vector<std::vector<Eigen::Matrix<double, 4, 1> > >&)[m[K’:
+[2.963s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:351:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcentroid_X_row[m[K’ was not declared in this scope; did you mean ‘[01m[Kcentroid_X_prime[m[K’?
+[2.963s]   351 |             [01;31m[Kcentroid_X_row[m[K = centroid_X.transpose();
+[2.963s]       |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.963s]       |             [32m[Kcentroid_X_prime[m[K
+[2.977s] [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:352:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcentroid_X_prime_row[m[K’ was not declared in this scope; did you mean ‘[01m[Kcentroid_X_prime[m[K’?
+[2.977s]   352 |             [01;31m[Kcentroid_X_prime_row[m[K = centroid_X_prime.transpose();
+[2.977s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[2.977s]       |             [32m[Kcentroid_X_prime[m[K
+[4.267s] gmake[2]: *** [CMakeFiles/calibration_node.dir/build.make:76: CMakeFiles/calibration_node.dir/src/calibration_node.cpp.o] Error 1
+[4.267s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/calibration_node.dir/all] Error 2
+[4.267s] gmake: *** [Makefile:146: all] Error 2
+[4.276s] Invoked command in '/home/parallels/calib_ws/build/hand_eye_calibration' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/calib_ws/build/hand_eye_calibration -- -j2 -l2

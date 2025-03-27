@@ -1,0 +1,13 @@
+[35m[1mConsolidate compiler generated dependencies of target calibration_node[0m
+[ 50%] Built target scan_processing_node
+[ 75%] [32mBuilding CXX object CMakeFiles/calibration_node.dir/src/calibration_node.cpp.o[0m
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:[m[K In member function ‘[01m[Kfloat CalibrationNode::validate_T(Eigen::Matrix4d, std::vector<Eigen::Matrix<double, 4, 4> >, std::vector<std::vector<Eigen::Matrix<double, 4, 1> > >, std::vector<std::vector<Eigen::Matrix<double, 4, 1> > >)[m[K’:
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:347:47:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kvector<[01;32m[Kstd::vector<Eigen::Matrix<double, 4, 1> >[m[K>[m[K’ to non-scalar type ‘[01m[Kvector<[01;32m[KEigen::Matrix<double, 4, 1>[m[K>[m[K’ requested
+  347 |             vector<Vector4d> cameraPointSet = [01;31m[Kscans[m[K;
+      |                                               [01;31m[K^~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:348:46:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kvector<[01;32m[Kstd::vector<Eigen::Matrix<double, 4, 1> >[m[K>[m[K’ to non-scalar type ‘[01m[Kvector<[01;32m[KEigen::Matrix<double, 4, 1>[m[K>[m[K’ requested
+  348 |             vector<Vector4d> worldPointSet = [01;31m[Kboard_points[m[K;
+      |                                              [01;31m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/calibration_node.dir/build.make:76: CMakeFiles/calibration_node.dir/src/calibration_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/calibration_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

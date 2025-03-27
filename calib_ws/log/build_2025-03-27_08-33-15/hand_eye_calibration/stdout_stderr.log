@@ -1,0 +1,119 @@
+[35m[1mConsolidate compiler generated dependencies of target calibration_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/calibration_node.dir/src/calibration_node.cpp.o[0m
+[ 75%] Built target scan_processing_node
+In file included from [01m[K/usr/include/aarch64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/11/memory:64[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:1[m[K:
+/usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kclass __gnu_cxx::new_allocator<Eigen::Matrix<double, 4, 4>&>[m[K’:
+[01m[K/usr/include/c++/11/bits/allocator.h:124:11:[m[K   required from ‘[01m[Kclass std::allocator<Eigen::Matrix<double, 4, 4>&>[m[K’
+[01m[K/usr/include/c++/11/bits/stl_vector.h:87:21:[m[K   required from ‘[01m[Kstruct std::_Vector_base<Eigen::Matrix<double, 4, 4>&, std::allocator<Eigen::Matrix<double, 4, 4>&> >[m[K’
+[01m[K/usr/include/c++/11/bits/stl_vector.h:389:11:[m[K   required from ‘[01m[Kclass std::vector<Eigen::Matrix<double, 4, 4>&>[m[K’
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:44:39:[m[K   required from here
+[01m[K/usr/include/c++/11/ext/new_allocator.h:62:26:[m[K [01;31m[Kerror: [m[Kforming pointer to reference type ‘[01m[KEigen::Matrix<double, 4, 4>&[m[K’
+   62 |       typedef _Tp*       [01;31m[Kpointer[m[K;
+      |                          [01;31m[K^~~~~~~[m[K
+[01m[K/usr/include/c++/11/ext/new_allocator.h:63:26:[m[K [01;31m[Kerror: [m[Kforming pointer to reference type ‘[01m[KEigen::Matrix<double, 4, 4>&[m[K’
+   63 |       typedef const _Tp* [01;31m[Kconst_pointer[m[K;
+      |                          [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/ext/new_allocator.h:103:7:[m[K [01;31m[Kerror: [m[Kforming pointer to reference type ‘[01m[KEigen::Matrix<double, 4, 4>&[m[K’
+  103 |       [01;31m[Kallocate[m[K(size_type __n, const void* = static_cast<const void*>(0))
+      |       [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/ext/new_allocator.h:132:7:[m[K [01;31m[Kerror: [m[Kforming pointer to reference type ‘[01m[KEigen::Matrix<double, 4, 4>&[m[K’
+  132 |       [01;31m[Kdeallocate[m[K(_Tp* __p, size_type __t __attribute__ ((__unused__)))
+      |       [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:64[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:1[m[K:
+/usr/include/c++/11/bits/allocator.h: In instantiation of ‘[01m[Kclass std::allocator<Eigen::Matrix<double, 4, 4>&>[m[K’:
+[01m[K/usr/include/c++/11/bits/stl_vector.h:87:21:[m[K   required from ‘[01m[Kstruct std::_Vector_base<Eigen::Matrix<double, 4, 4>&, std::allocator<Eigen::Matrix<double, 4, 4>&> >[m[K’
+[01m[K/usr/include/c++/11/bits/stl_vector.h:389:11:[m[K   required from ‘[01m[Kclass std::vector<Eigen::Matrix<double, 4, 4>&>[m[K’
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:44:39:[m[K   required from here
+[01m[K/usr/include/c++/11/bits/allocator.h:133:26:[m[K [01;31m[Kerror: [m[Kforming pointer to reference type ‘[01m[KEigen::Matrix<double, 4, 4>&[m[K’
+  133 |       typedef _Tp*       [01;31m[Kpointer[m[K;
+      |                          [01;31m[K^~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/allocator.h:134:26:[m[K [01;31m[Kerror: [m[Kforming pointer to reference type ‘[01m[KEigen::Matrix<double, 4, 4>&[m[K’
+  134 |       typedef const _Tp* [01;31m[Kconst_pointer[m[K;
+      |                          [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/ext/alloc_traits.h:34[m[K,
+                 from [01m[K/usr/include/c++/11/bits/stl_uninitialized.h:64[m[K,
+                 from [01m[K/usr/include/c++/11/memory:66[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:1[m[K:
+/usr/include/c++/11/bits/alloc_traits.h: In instantiation of ‘[01m[Kstruct std::allocator_traits<std::allocator<Eigen::Matrix<double, 4, 4>&> >[m[K’:
+[01m[K/usr/include/c++/11/ext/alloc_traits.h:48:10:[m[K   required from ‘[01m[Kstruct __gnu_cxx::__alloc_traits<std::allocator<Eigen::Matrix<double, 4, 4>&>, Eigen::Matrix<double, 4, 4>&>[m[K’
+[01m[K/usr/include/c++/11/bits/stl_vector.h:87:21:[m[K   required from ‘[01m[Kstruct std::_Vector_base<Eigen::Matrix<double, 4, 4>&, std::allocator<Eigen::Matrix<double, 4, 4>&> >[m[K’
+[01m[K/usr/include/c++/11/bits/stl_vector.h:389:11:[m[K   required from ‘[01m[Kclass std::vector<Eigen::Matrix<double, 4, 4>&>[m[K’
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:44:39:[m[K   required from here
+[01m[K/usr/include/c++/11/bits/alloc_traits.h:420:13:[m[K [01;31m[Kerror: [m[Kforming pointer to reference type ‘[01m[KEigen::Matrix<double, 4, 4>&[m[K’
+  420 |       using [01;31m[Kpointer[m[K = _Tp*;
+      |             [01;31m[K^~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/alloc_traits.h:423:13:[m[K [01;31m[Kerror: [m[Kforming pointer to reference type ‘[01m[KEigen::Matrix<double, 4, 4>&[m[K’
+  423 |       using [01;31m[Kconst_pointer[m[K = const _Tp*;
+      |             [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/bits/stl_uninitialized.h:64[m[K,
+                 from [01m[K/usr/include/c++/11/memory:66[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:1[m[K:
+/usr/include/c++/11/ext/alloc_traits.h: In instantiation of ‘[01m[Kstruct __gnu_cxx::__alloc_traits<std::allocator<Eigen::Matrix<double, 4, 4>&>, Eigen::Matrix<double, 4, 4>&>[m[K’:
+[01m[K/usr/include/c++/11/bits/stl_vector.h:87:21:[m[K   required from ‘[01m[Kstruct std::_Vector_base<Eigen::Matrix<double, 4, 4>&, std::allocator<Eigen::Matrix<double, 4, 4>&> >[m[K’
+[01m[K/usr/include/c++/11/bits/stl_vector.h:389:11:[m[K   required from ‘[01m[Kclass std::vector<Eigen::Matrix<double, 4, 4>&>[m[K’
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:44:39:[m[K   required from here
+[01m[K/usr/include/c++/11/ext/alloc_traits.h:64:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kallocate[m[K’ has not been declared in ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<Eigen::Matrix<double, 4, 4>&>, Eigen::Matrix<double, 4, 4>&>::_Base_type[m[K’
+   64 |     using _Base_type::[01;31m[Kallocate[m[K;
+      |                       [01;31m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/ext/alloc_traits.h:65:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kdeallocate[m[K’ has not been declared in ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<Eigen::Matrix<double, 4, 4>&>, Eigen::Matrix<double, 4, 4>&>::_Base_type[m[K’
+   65 |     using _Base_type::[01;31m[Kdeallocate[m[K;
+      |                       [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+                 from [01m[K/usr/include/c++/11/functional:62[m[K,
+                 from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+                 from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:1[m[K:
+/usr/include/c++/11/bits/stl_vector.h: In instantiation of ‘[01m[Kclass std::vector<Eigen::Matrix<double, 4, 4>&>[m[K’:
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:44:39:[m[K   required from here
+[01m[K/usr/include/c++/11/bits/stl_vector.h:474:20:[m[K [01;31m[Kerror: [m[K‘[01m[K_M_allocate[m[K’ has not been declared in ‘[01m[Kstd::vector<Eigen::Matrix<double, 4, 4>&>::_Base[m[K’
+  474 |       using _Base::[01;31m[K_M_allocate[m[K;
+      |                    [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:475:20:[m[K [01;31m[Kerror: [m[K‘[01m[K_M_deallocate[m[K’ has not been declared in ‘[01m[Kstd::vector<Eigen::Matrix<double, 4, 4>&>::_Base[m[K’
+  475 |       using _Base::[01;31m[K_M_deallocate[m[K;
+      |                    [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1168:7:[m[K [01;31m[Kerror: [m[Kforming pointer to reference type ‘[01m[KEigen::Matrix<double, 4, 4>&[m[K’
+ 1168 |       [01;31m[Kdata[m[K() _GLIBCXX_NOEXCEPT
+      |       [01;31m[K^~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1172:7:[m[K [01;31m[Kerror: [m[Kforming pointer to reference type ‘[01m[KEigen::Matrix<double, 4, 4>&[m[K’
+ 1172 |       [01;31m[Kdata[m[K() const _GLIBCXX_NOEXCEPT
+      |       [01;31m[K^~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1203:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = Eigen::Matrix<double, 4, 4>&; _Alloc = std::allocator<Eigen::Matrix<double, 4, 4>&>; std::vector<_Tp, _Alloc>::value_type = Eigen::Matrix<double, 4, 4>&][m[K’ cannot be overloaded with ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = Eigen::Matrix<double, 4, 4>&; _Alloc = std::allocator<Eigen::Matrix<double, 4, 4>&>; std::vector<_Tp, _Alloc>::value_type = Eigen::Matrix<double, 4, 4>&][m[K’
+ 1203 |       [01;31m[Kpush_back[m[K(value_type&& __x)
+      |       [01;31m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1187:7:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = Eigen::Matrix<double, 4, 4>&; _Alloc = std::allocator<Eigen::Matrix<double, 4, 4>&>; std::vector<_Tp, _Alloc>::value_type = Eigen::Matrix<double, 4, 4>&][m[K’
+ 1187 |       [01;36m[Kpush_back[m[K(const value_type& __x)
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:[m[K In constructor ‘[01m[KCalibrationNode::CalibrationNode()[m[K’:
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:44:50:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kvector<[01;32m[KEigen::Matrix<double, 4, 4>[m[K>[m[K’ to ‘[01m[Kvector<[01;32m[KEigen::Matrix<double, 4, 4>&[m[K>[m[K’
+   44 |         float averageRMSE = validate_T(T_cam_ee, [01;31m[Kflange_poses[m[K, scans, board_points);
+      |                                                  [01;31m[K^~~~~~~~~~~~[m[K
+      |                                                  [01;31m[K|[m[K
+      |                                                  [01;31m[Kvector<Eigen::Matrix<double, 4, 4>>[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:336:60:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kfloat CalibrationNode::validate_T(Eigen::Matrix4d&, std::vector<Eigen::Matrix<double, 4, 4>&>, std::vector<std::vector<Eigen::Matrix<double, 4, 1> > >, std::vector<std::vector<Eigen::Matrix<double, 4, 1> > >)[m[K’
+  336 |     float validate_T(Matrix4d& T_cam_ee, [01;36m[Kvector<Matrix4d&> flange_poses[m[K, vector<vector<Vector4d>> scans, vector<vector<Vector4d>> board_points) {
+      |                                          [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:[m[K In member function ‘[01m[Kfloat CalibrationNode::validate_T(Eigen::Matrix4d&, std::vector<Eigen::Matrix<double, 4, 4>&>, std::vector<std::vector<Eigen::Matrix<double, 4, 1> > >, std::vector<std::vector<Eigen::Matrix<double, 4, 1> > >)[m[K’:
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:342:49:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+  342 |             Matrix4d poseInverse = flange_poses[[01;31m[Ki[m[K].inverse();
+      |                                                 [01;31m[K^[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:347:47:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kvector<[01;32m[Kstd::vector<Eigen::Matrix<double, 4, 1> >[m[K>[m[K’ to non-scalar type ‘[01m[Kvector<[01;32m[KEigen::Matrix<double, 4, 1>[m[K>[m[K’ requested
+  347 |             vector<Vector4d> cameraPointSet = [01;31m[Kscans[m[K;
+      |                                               [01;31m[K^~~~~[m[K
+[01m[K/home/parallels/calib_ws/src/hand_eye_calibration/src/calibration_node.cpp:348:46:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kvector<[01;32m[Kstd::vector<Eigen::Matrix<double, 4, 1> >[m[K>[m[K’ to non-scalar type ‘[01m[Kvector<[01;32m[KEigen::Matrix<double, 4, 1>[m[K>[m[K’ requested
+  348 |             vector<Vector4d> worldPointSet = [01;31m[Kboard_points[m[K;
+      |                                              [01;31m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/calibration_node.dir/build.make:76: CMakeFiles/calibration_node.dir/src/calibration_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/calibration_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

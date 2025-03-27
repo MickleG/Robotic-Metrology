@@ -41,6 +41,12 @@ public:
         Matrix4d T_cam_ee = compute_T_cam_ee(flange_poses, scans, board_points);
         cout << "T_cam_ee: \n" << T_cam_ee << endl;
 
+        float averageRMSE = validate_T(T_cam_ee, flange_poses, scans, board_points);
+
+        cout << "Average RMSE: " << averageRMSE << endl;
+
+        visualizeBackprojection(flange_poses, T_cam_ee, scans, board_points);
+
     }
 
 private:
@@ -163,137 +169,83 @@ private:
     }
 
     // Visualization (not currently working properly)
-    // void visualizeTransform(vector<Matrix4d> pose_list, vector<vector<Vector4d>> scan_points) {
-    //     vtkObject::GlobalWarningDisplayOff();
-    //     visualization::PCLVisualizer viewer("Transform Visualization");
-
-    //     // Adding the known T_ee_cam here for visualization purposes, not used in estimation
-    //     Matrix4d T_ee_cam;
-    //     T_ee_cam << 1, 0, 0, 0,
-    //                          0, 1, 0, 0,
-    //                          0, 0, 1, 0.05,
-    //                          0, 0, 0, 1;
-
-    //     for(int i = 0; i < 1; i++) {
-    //         Matrix4d pose = pose_list[i];
-    //         vector<Vector4d> point_set = scan_points[i];
-
-    //         cout << "robot pose is: \n" << pose << endl;
-
-    //         PointCloud<PointXYZRGB>::Ptr camera_cloud(new PointCloud<PointXYZRGB>);
-    //         PointCloud<PointXYZRGB>::Ptr ee_cloud(new PointCloud<PointXYZRGB>);
-    //         PointCloud<PointXYZ>::Ptr world_cloud(new PointCloud<PointXYZ>);
-
-    //         for(int point_index = 0; point_index < point_set.size(); point_index++) {
-    //             Vector4d point = point_set[point_index];
-
-    //             Vector4d point_ee = T_ee_cam * point;
-
-    //             Vector4d point_world = pose.inverse() * point_ee;
-
-    //             point_world /= point_world(3);
-
-    //             PointXYZRGB pcl_point_camera;
-    //             PointXYZRGB pcl_point_ee;
-    //             PointXYZ pcl_point_world;
-
-    //             // Add camera points
-    //             pcl_point_camera.x = point(0);
-    //             pcl_point_camera.y = point(1);
-    //             pcl_point_camera.z = point(2);
-    //             pcl_point_camera.rgb = PackRGB(0, 255, 0);
-    //             camera_cloud->points.push_back(pcl_point_camera);
-
-    //             // Add end effector points
-    //             pcl_point_ee.x = point_ee(0);
-    //             pcl_point_ee.y = point_ee(1);
-    //             pcl_point_ee.z = point_ee(2);
-    //             pcl_point_ee.rgb = PackRGB(255, 0, 0);
-    //             ee_cloud->points.push_back(pcl_point_ee);
-
-    //             // Add points transformed to world
-    //             pcl_point_world.x = point_world(0);
-    //             pcl_point_world.y = point_world(1);
-    //             pcl_point_world.z = point_world(2);
-    //             world_cloud->points.push_back(pcl_point_world);
-
-    //         }
-
-    //         string camera_name = "origianl_" + to_string(i);
-    //         string ee_name = "ee_" + to_string(i);
-    //         string world_name = "world_" + to_string(i);
-    //         viewer.addPointCloud(camera_cloud, camera_name);
-    //         viewer.addPointCloud(ee_cloud, ee_name);
-    //         viewer.addPointCloud(world_cloud, world_name);
-
-    //         Affine3f affine_pose = Affine3f(pose.cast<float>());
-
-    //         cout << "affine robot pose is: \n" << affine_pose.matrix() << endl;
-    //         viewer.addCoordinateSystem(0.1, affine_pose);
-
-    //     }
-
-    //     viewer.setBackgroundColor(0, 0, 0);
-    //     viewer.addCoordinateSystem(0.5);
-
-    //     // Give OpenGL some time to initialize
-    //     this_thread::sleep_for(chrono::milliseconds(500));
-
-    //     viewer.spin();
-    // }
+    void visualizeBackprojection(vector<Matrix4d> pose_list, Matrix4d T_cam_ee, vector<vector<Vector4d>> scan_points, vector<vector<Vector4d>> board_points) {
+        vtkObject::GlobalWarningDisplayOff();
+        visualization::PCLVisualizer viewer("Transform Visualization");
 
 
-    // Function to make rotation matrix orthonormal
-    void fixRotationMatrix(Matrix3d& R) {
-        // Perform SVD on the rotation matrix R
-        JacobiSVD<Matrix3d> svd(R, ComputeFullU | ComputeFullV);
-        Matrix3d U = svd.matrixU();
-        Matrix3d V = svd.matrixV();
-
-        // Reconstruct the rotation matrix with orthogonality enforced
-        R = U * V.transpose();
-    }
+        for(int i = 0; i < 5; i++) {
+            Matrix4d pose = pose_list[i];
+            vector<Vector4d> point_set = scan_points[i];
+            vector<Vector4d> board_point_set = board_points[i];
 
 
-    void buildCorrespondenceMatrix(MatrixXd& correspondenceMatrix, vector<Vector4d> X_set, vector<Vector4d> X_prime_set) {
+            PointCloud<PointXYZRGB>::Ptr camera_cloud(new PointCloud<PointXYZRGB>);
+            PointCloud<PointXYZRGB>::Ptr ee_cloud(new PointCloud<PointXYZRGB>);
+            PointCloud<PointXYZ>::Ptr backprojected_cloud(new PointCloud<PointXYZ>);
+            PointCloud<PointXYZRGB>::Ptr board_cloud(new PointCloud<PointXYZRGB>);
 
-        for (int i = 0; i < numScanPoints; i++) {
-            Vector4d x = X_set[i];
-            Vector4d x_prime = X_prime_set[i];
 
-            int row = 3 * i;
-            MatrixXd correspondenceBlock(3, 16);
-            correspondenceBlock << 
-                x[0], x[1], x[2], 1, 0, 0, 0, 0, 0, 0, 0, 0, -x[0] * x_prime[0], -x[1] * x_prime[0], -x[2] * x_prime[0], -x_prime[0],
-                0, 0, 0, 0, x[0], x[1], x[2], 1, 0, 0, 0, 0, -x[0] * x_prime[1], -x[1] * x_prime[1], -x[2] * x_prime[1], -x_prime[1],
-                0, 0, 0, 0, 0, 0, 0, 0, x[0], x[1], x[2], 1, -x[0] * x_prime[2], -x[1] * x_prime[2], -x[2] * x_prime[2], -x_prime[2];
+            for(int point_index = 0; point_index < point_set.size(); point_index++) {
+                Vector4d point = point_set[point_index];
+                Vector4d point_board = board_point_set[point_index];
 
-            correspondenceMatrix.block<3, 16>(row, 0) = correspondenceBlock;
-        }
-    }
+                Vector4d point_ee = T_cam_ee * point;
 
-    void reshapeAndCondition(Matrix4d& T_cam_ee, VectorXd& T_vector, Matrix4d& pose) {    
-        for (int i = 0; i < 4; ++i) {
-            for (int j = 0; j < 4; ++j) {
-                T_cam_ee(i, j) = T_vector(i * 4 + j);
+                Vector4d point_backprojected = pose.inverse() * point_ee;
+
+                point_backprojected /= point_backprojected(3);
+
+                PointXYZRGB pcl_point_camera;
+                PointXYZ pcl_point_backprojected;
+                PointXYZRGB pcl_point_board;
+
+                // Add camera points
+                pcl_point_camera.x = point(0);
+                pcl_point_camera.y = point(1);
+                pcl_point_camera.z = point(2);
+                pcl_point_camera.rgb = PackRGB(0, 255, 0);
+                camera_cloud->points.push_back(pcl_point_camera);
+
+                // Add backprojected points
+                pcl_point_backprojected.x = point_backprojected(0);
+                pcl_point_backprojected.y = point_backprojected(1);
+                pcl_point_backprojected.z = point_backprojected(2);
+                backprojected_cloud->points.push_back(pcl_point_backprojected);
+
+                // Add original board points
+                pcl_point_board.x = point_board(0);
+                pcl_point_board.y = point_board(1);
+                pcl_point_board.z = point_board(2);
+                pcl_point_board.rgb = PackRGB(0, 0, 255);
+                board_cloud->points.push_back(pcl_point_board);
+
             }
+
+            string camera_name = "origianl_" + to_string(i);
+            string backprojected_name = "backprojected_" + to_string(i);
+            string board_name = "board_" + to_string(i);
+
+            viewer.addPointCloud(camera_cloud, camera_name);
+            viewer.addPointCloud(backprojected_cloud, backprojected_name);
+            viewer.addPointCloud(board_cloud, board_name);
+
+            Affine3f affine_pose = Affine3f(pose.cast<float>());
+
+            viewer.addCoordinateSystem(0.1, affine_pose);
+
         }
 
-        T_cam_ee /= T_cam_ee(3, 3); // Normalize to make sure bottom-right is 1
-        
-        // Make rotation orthonormal
-        Matrix3d R = T_cam_ee.block<3, 3>(0, 0);
-        fixRotationMatrix(R);
+        viewer.setBackgroundColor(0, 0, 0);
+        viewer.addCoordinateSystem(0.5);
 
-        // Update the transformation matrix with the amended rotation matrix
-        T_cam_ee.block<3, 3>(0, 0) = R;
+        // Give OpenGL some time to initialize
+        this_thread::sleep_for(chrono::milliseconds(500));
 
-        // Make last row 0, 0, 0, 1 for affine transform
-        T_cam_ee.row(3) = Vector4d(0, 0, 0, 1);
-
-        // Left-product with pose because T_cam^w = pose^(-1) * T_cam^ee
-        T_cam_ee = pose * T_cam_ee;
+        viewer.spin();
     }
+
+
 
 
     Matrix4d compute_T_cam_ee(vector<Matrix4d> pose_list, vector<vector<Vector4d>>& X_sets, vector<vector<Vector4d>>& X_prime_sets) {
@@ -305,25 +257,67 @@ private:
         cout << "num poses: " << numPoses << endl;
 
         for (int setIdx = 0; setIdx < numPoses; setIdx++) {
+
+            vector<Vector4d> X_set = X_sets[setIdx];
+            vector<Vector4d> X_prime_set = X_prime_sets[setIdx];
+
+
+            int setSize = X_set.size();
+
+            // Collect pose for T_cam_ee extraction from T_cam_world
             Matrix4d pose = pose_list[setIdx]; 
             Matrix4d pose_inverse = pose.inverse();
 
-            // Build correspondence matrix using normalized points
-            MatrixXd correspondenceMatrix(3 * numScanPoints, 16);
+            // Compute centroids of set in pose
+            Vector3d centroid_X = Vector3d::Zero();
+            Vector3d centroid_X_prime = Vector3d::Zero();
 
-            // Using point-to-point correspondences to construct Ax = 0 system of equations, where x is the vectorized coefficients of T_cam_ee
-            buildCorrespondenceMatrix(correspondenceMatrix, X_sets[setIdx], X_prime_sets[setIdx]);
+            for (int i = 0; i < setSize; ++i) {
+                centroid_X += X_set[i].head<3>();
+                centroid_X_prime += X_prime_set[i].head<3>();
+            }
+
+            centroid_X /= setSize;
+            centroid_X_prime /= setSize;
 
 
-            // Solve using SVD
-            JacobiSVD<MatrixXd> svd(correspondenceMatrix, ComputeFullV);
+            // Construct covariance matrix
+            MatrixXd X_mat(setSize, 3);
+            MatrixXd X_prime_mat(setSize, 3);
 
-            // Compute the transformation matrix from the SVD result
-            VectorXd T_vector = svd.matrixV().col(15); // Extracting the smallest singular value solution
-            
-            // Reshape and condition SVD result into 4d matrix
-            Matrix4d T_cam_ee;
-            reshapeAndCondition(T_cam_ee, T_vector, pose);
+            for (int i = 0; i < setSize; ++i) {
+                X_mat.row(i) = (X_set[i].head<3>() - centroid_X).transpose();
+                X_prime_mat.row(i) = (X_prime_set[i].head<3>() - centroid_X_prime).transpose();
+            }
+
+            Matrix3d matrixProduct = X_mat.transpose() * X_prime_mat;
+
+
+            // Perform SVD on covariance matrix - if det(V) == -1 then we account for reflection for our T_cam_world (which should work for real scan data)
+            JacobiSVD<Matrix3d> svd(matrixProduct, ComputeFullU | ComputeFullV);
+            Matrix3d U = svd.matrixU();
+            Matrix3d V = svd.matrixV();
+
+            Matrix3d R = V.transpose() * U;
+
+            // Calculate translation vector
+            Vector3d t = centroid_X_prime - R * centroid_X;
+
+
+            Matrix4d T_cam_world = Matrix4d::Identity(); // Initialize as identity matrix
+
+            // Assign rotation
+            T_cam_world.block<3,3>(0,0) = R;
+
+            // Assign translation
+            T_cam_world.block<3,1>(0,3) = t;
+
+            // Left product by robot pose to collect T_cam_ee as T_cam_world = pose.inverse() * T_cam_ee
+            Matrix4d T_cam_ee = pose * T_cam_world;
+
+            // noramlize so last row is 0, 0, 0, 1
+            T_cam_ee /= T_cam_ee(3, 3);
+
 
             // Add 4d result to parent matrix for averaging over all poses
             T_ee_cam_accumulator += T_cam_ee;
@@ -335,6 +329,43 @@ private:
         T_ee_cam_accumulator /= numPoses;
 
         return T_ee_cam_accumulator;
+    }
+
+
+    float validate_T(Matrix4d T_cam_ee, vector<Matrix4d> flange_poses, vector<vector<Vector4d>> scans, vector<vector<Vector4d>> board_points) {
+
+        
+        float averageRMSE = 0.0;
+
+        for(int n = 0; n < numPoses; n++) {
+            Matrix4d poseInverse = flange_poses[n].inverse();
+            Matrix4d T_cam_world = poseInverse * T_cam_ee;
+
+            float sumSquaredErrors = 0.0;
+
+            vector<Vector4d> cameraPointSet = scans[n];
+            vector<Vector4d> worldPointSet = board_points[n];
+
+            for(int i = 0; i < cameraPointSet.size(); i++) {
+                Vector4d backProjectedPoint = T_cam_world * cameraPointSet[i];
+                Vector4d originalWorldPoint = worldPointSet[i];
+
+                float squaredError = (backProjectedPoint.head<3>() - originalWorldPoint.head<3>()).squaredNorm();
+
+                sumSquaredErrors += squaredError;
+            }
+
+            // Calculate the Mean Squared Error (MSE)
+            float meanSquaredError = sumSquaredErrors / cameraPointSet.size();
+
+            // Calculate the Root Mean Squared Error (RMSE)
+            float RMSE = sqrt(meanSquaredError);
+
+            averageRMSE += RMSE;
+        }
+
+        
+        return averageRMSE / numPoses;
     }
 };
 
